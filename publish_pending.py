@@ -241,6 +241,35 @@ def publish_pending(date_str: str = None):
     else:
         log.info("Facebook ignore (pas de FACEBOOK_PAGE_TOKEN)")
 
+    # Distribution multi-reseaux (Publora/PostLake)
+    try:
+        from pipeline.multi_social import distribuer_video_tous_reseaux
+        for lang, url in blogger_urls.items():
+            titre = script.get(lang, {}).get("titre", "")
+            if titre and url:
+                video_data = {
+                    "titre": titre,
+                    "url_youtube": f"https://youtube.com/watch?v={video_ids.get(lang, '')}",
+                    "hashtags": ["economie", "finance", "actualite"],
+                }
+                distribuer_video_tous_reseaux(video_data)
+                log.info(f"Distribution multi-reseaux {lang}: OK")
+    except Exception as e:
+        log.warning(f"Distribution multi-reseaux echouee: {e}")
+
+    # Newsletter Brevo
+    try:
+        from pipeline.newsletter import envoyer_newsletter
+        for lang, url in blogger_urls.items():
+            titre = script.get(lang, {}).get("titre", "")
+            if titre and url:
+                video_id = video_ids.get(lang, "")
+                youtube_url = f"https://youtube.com/watch?v={video_id}" if video_id else None
+                envoyer_newsletter(titre, url, youtube_url)
+                log.info(f"Newsletter {lang}: envoyee")
+    except Exception as e:
+        log.warning(f"Newsletter echouee: {e}")
+
     log.info("=== PUBLISH PENDING TERMINE ===")
     # Afficher le resume
     print(json.dumps(published.get(date_str, {}), indent=2, ensure_ascii=False))
