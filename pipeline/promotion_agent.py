@@ -304,22 +304,42 @@ def search_twitter_tweets(query: str, max_results: int = 10) -> List[Dict]:
 
 
 def generate_promo_comment(video_title: str, video_url: str, lang: str = "fr") -> str:
-    """Genere un commentaire promotionnel adapte a la plateforme."""
+    """Genere un commentaire promotionnel adapte a la plateforme (LLM + templates)."""
+    # Essayer le LLM d'abord
+    try:
+        sys.path.insert(0, str(ROOT / "pipeline")) if str(ROOT / "pipeline") not in sys.path else None
+        from llm import call_llm
+        prompt = f"""Genere un commentaire YouTube court et naturel en {lang} pour promouvoir une chaine economique.
+Le commentaire doit :
+- Etre pertinent au sujet de la video: "{video_title}"
+- Mentionner subtilement notre chaine: {video_url}
+- Etre conversationnel, pas spammy
+- Faire 1-2 phrases max
+- Inclure un appel a l'action subtil (abonnez-vous, voir notre analyse)
+
+Reponds UNIQUEMENT avec le commentaire, sans guillemets ni explication."""
+        result = call_llm(prompt, max_tokens=100)
+        if result and len(result) > 20 and len(result) < 300:
+            return result.strip()
+    except Exception:
+        pass
+
+    # Fallback templates
     templates = {
         "fr": [
             f"Excellent sujet ! J'ai aussi fait une video sur ce theme : {video_url} — n'hesitez pas a y jeter un oeil.",
             f"Pour aller plus loin sur ce sujet, j'ai publie une analyse complete ici : {video_url}",
-            f"Je couvre aussi ce sujet en detail sur ma chaine : {video_url} — abonnez-vous pour plus d'analyses economiques !",
+            f"Je couvre aussi ce sujet en detail sur ma chaine : {video_url} — abonnez-vous pour plus d'analyses !",
         ],
         "en": [
             f"Great topic! I also made a video on this: {video_url} — check it out.",
             f"For a deeper dive, I published a full analysis here: {video_url}",
-            f"I also cover this in detail on my channel: {video_url} — subscribe for more economic insights!",
+            f"I also cover this in detail on my channel: {video_url} — subscribe for more insights!",
         ],
         "es": [
             f"Excelente tema! Tambien hice un video sobre esto: {video_url} — echale un vistazo.",
             f"Para profundizar, publique un analisis completo aqui: {video_url}",
-            f"Tambien cubro esto en detalle en mi canal: {video_url} — suscribete para mas analisis economicos!",
+            f"Tambien cubro esto en detalle en mi canal: {video_url} — suscribete para mas analisis!",
         ],
     }
     import random

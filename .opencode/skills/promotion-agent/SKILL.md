@@ -33,11 +33,25 @@ Posts comments on relevant YouTube videos.
 
 | Platform | Status | Capabilities |
 |---|---|---|
-| YouTube | ✅ Active | Search videos, post comments (OAuth required) |
+| YouTube | ✅ Active | Search videos, post comments (OAuth), auto-reply |
 | Facebook | ✅ Active | Post to page with links |
 | Twitter/X | ⚠️ Search only | Search tweets (posting requires OAuth 1.0a) |
 | Reddit | ⚠️ Search only | Find relevant posts (posting requires credentials) |
 | Blogger | ✅ Active | Publish articles, index on Google/Bing |
+| Medium | ⚠️ Ready | Publish articles (requires MEDIUM_TOKEN) |
+| CoinGecko | ✅ Active | Crypto prices for economic content |
+| YouTube Transcripts | ✅ Active | Extract transcripts (youtube-transcript-api) |
+
+## Available APIs (from public-apis/public-apis)
+
+| API | Usage | Status |
+|---|---|---|
+| CoinGecko | Crypto prices for economic content | ✅ Working |
+| YouTube Transcript API | Extract video transcripts | ✅ Working |
+| Reddit JSON API | Search Reddit posts | ⚠️ 403 (needs OAuth) |
+| GetXAPI | Twitter/X data | ⚠️ 402 (credits depleted) |
+| TrendsMCP | Keyword trends | ⚠️ 400 (needs auth) |
+| InsightSocial | Social profiles | ⚠️ Untested |
 
 ## Promotion Strategy
 
