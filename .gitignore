@@ -1,0 +1,28 @@
+# Secrets
+.env
+config.py
+client_secrets.json
+client_secret.json
+*.pickle
+*.json.bak
+
+# Output
+output/
+data/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+bot.lock
+
+# IDE
+.vscode/
+.idea/
+PYEOF
