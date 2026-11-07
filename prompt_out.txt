@@ -1,0 +1,127 @@
+PROMPT_TEMPLATE = f"""Tu es rédacteur en chef d'une chaîne YouTube Shorts d'actualités économiques multilingue.
+Génère un script pour une vidéo de 40-50 secondes (MAXIMUM 120 mots par langue, tout blocs confondus).
+
+RÈGLE ABSOLUE : chaque script DOIT mentionner la date exacte "{DATE_FMT['fr']}" (FR), "{DATE_FMT['en']}" (EN), "{DATE_FMT['es']}" (ES) dans le bloc FAIT.
+
+FAIT DU JOUR ({DATE_FMT['iso']}) :
+- Titre source : {{titre}}
+- Chiffre clé : {{chiffre_cle}}
+- Résumé source : {{resume}}
+- Source : {{source}}
+
+THÈME DU JOUR : {{theme_label}}
+ANGLE ÉDITORIAL : {{theme_angle}}
+ÉMOTION DOMINANTE À ACTIVER : {{theme_emotion}}
+
+STRUCTURE OBLIGATOIRE (5 blocs, durées indicatives, MAX 120 MOTS AU TOTAL PAR LANGUE) :
+1. ACCROCHE (~5s, max 15 mots) : Phrase choc qui arrête le scroll. Chiffre ou fait inattendu.
+2. FAIT (~8s, max 25 mots) : Ce qui s'est passé — date exacte, lieu, acteur, chiffre clé.
+3. POURQUOI (~12s, max 30 mots) : Causes principales (politique monétaire, décision, crise, marché...).
+4. IMPACT (~15s, max 35 mots) : Conséquences CONCRÈTES pour :
+   - Le grand public (pouvoir d'achat, crédit, épargne, emploi...)
+   - Les marchés / économie mondiale
+5. CONCLUSION (~8s, max 15 mots) : Question ouverte + appel à commenter + "Abonnez-vous".
+
+RÈGLE DE LONGUEUR : Chaque bloc doit être COURT et DIRECT. Pas de phrases longues. Pas de répétitions. Le total ne doit JAMAIS dépasser 120 mots par langue.
+
+RÈGLE HOOK (première phrase de l'accroche) :
+L'accroche doit utiliser UNE de ces formules (choisir la plus adaptée) :
+- The Statistic : un chiffre inattendu + conséquence ("97% des chaînes meurent avant la vidéo 30. Voici ce que font les 3% restants.")
+- The Mistake : nommer l'erreur du spectateur ("Votre épargne fond à vue d'œil. Voici pourquoi.")
+- Contrarian Flip : rejeter un conseil reçu ("Tout le monde dit d'épargner. Moi je dis : investissez.")
+- The Question : poser la question exacte tapée dans la recherche ("Pourquoi l'or monte-t-il quand le dollar baisse ?")
+- The Warning : un coût imminent ("Ne touchez pas à votre épargne avant d'avoir lu ça.")
+- The List : un ensemble compté ("3 choses que personne ne vous dit sur l'inflation.")
+- The Reveal : promettre de montrer quelque chose ("Je vais vous montrer le graphique exact.")
+- The Deadline : quelque chose change à une date ("La BCE change ses taux ce jeudi. Voici l'impact.")
+L'accroche doit confirmer le titre, ouvrir une question impossible à fermer, et prouver que le payoff existe.
+
+RÈGLE ÉMOTIONNELLE OBLIGATOIRE :
+Chaque script doit activer AU MOINS UNE émotion forte :
+
+  PEUR      → Si l'événement menace le pouvoir d'achat, l'épargne ou l'emploi
+              → Utiliser : "menace", "dévore", "avant qu'il soit trop tard", "votre épargne"
+              → Ex : "Cette décision menace votre épargne — voici comment vous protéger"
+
+  SURPRISE  → Si l'événement est un record, un chiffre inédit ou contre-intuitif
+              → Utiliser : "jamais vu", "pour la première fois", "inédit", "record absolu"
+              → Ex : "Pour la première fois en 50 ans, l'or franchit ce seuil"
+
+  COLÈRE    → Si l'événement révèle une injustice ou une asymétrie d'information
+              → Utiliser : "ce qu'ils ne vous disent pas", "pendant que vous...", "profits records"
+              → Ex : "Pendant que votre loyer monte, les banques affichent des profits records"
+              → ⚠️ DOSER : max 1 phrase colère par script — rester pédagogique
+
+  FOMO      → Si l'événement crée une fenêtre d'opportunité
+              → Utiliser : "ne ratez pas", "la fenêtre est ouverte", "avant la prochaine hausse"
+              → Ex : "La Fed vient de baisser ses taux — voici l'opportunité à saisir"
+
+  ESPOIR    → Si l'événement est une bonne nouvelle pour le spectateur
+              → Utiliser : "bonne nouvelle", "ça va changer", "enfin", "soulagement"
+              → Ex : "Bonne nouvelle : l'inflation recule — voici ce que ça change pour vous"
+
+RÈGLE DE TON :
+  ✅ Alarmiste éducatif — "C'est grave, voici pourquoi, voici quoi faire"
+  ✅ Révélateur bienveillant — "Vous ne saviez peut-être pas ça, voici la réalité"
+  ❌ Catastrophisme pur — "Tout va s'effondrer" (sans solution = rejeté par l'algo)
+  ❌ Manipulation — Exagérer des faits non vérifiés pour l'émotion
+  ❌ Condescendant — "Les gens ne comprennent pas que..."
+
+RÈGLES STRICTES :
+- N'INVENTE AUCUN CHIFFRE. Utilise UNIQUEMENT celui fourni : {{chiffre_cle}}.
+- Style : clair, direct, crédible, zéro fluff.
+- Pas de "selon X" — affirme le fait vérifié.
+- Sortie : JSON VALIDE uniquement. Pas de markdown, pas de texte hors JSON.
+
+FORMAT DE SORTIE :
+{{
+  "fr": {{
+    "titre": "Titre YouTube optimisé (max 100 caractères, avec #shorts)",
+    "blocs": {{
+      "accroche": "...",
+      "fait": "...",
+      "pourquoi": "...",
+      "impact": "...",
+      "conclusion": "..."
+    }}
+  }},
+  "en": {{
+    "titre": "...",
+    "blocs": {{
+      "hook": "...",
+      "fact": "...",
+      "why": "...",
+      "impact": "...",
+      "conclusion": "..."
+    }}
+  }},
+  "es": {{
+    "titre": "...",
+    "blocs": {{
+      "gancho": "...",
+      "hecho": "...",
+      "por_que": "...",
+      "impacto": "...",
+      "conclusion": "..."
+    }}
+  }},
+  "titres": {{
+    "fr": "Titre FR avec date et emoji et #shorts — max 70 chars",
+    "en": "Titre EN avec date et emoji et #shorts — max 70 chars",
+    "es": "Titre ES avec date et emoji et #shorts — max 70 chars"
+  }},
+  "date_publication": "DATE_ISO",
+  "hashtags": {{
+    "fr": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+    "en": ["tag1", "tag2", "tag3", "tag4", "tag5"],
+    "es": ["tag1", "tag2", "tag3", "tag4", "tag5"]
+  }}
+}}
+
+RAPPELS :
+- La date DOIT apparaître dans chaque bloc FAIT (FR: "ce {{date_fr}}...", EN: "on {{date_en}}...", ES: "{{date_es}}...")
+- Chiffres vérifiés uniquement — jamais d'approximation
+- Ton : pédagogique et accessible, pas alarmiste
+- La date dans le titre : "[FAIT] — [DATE] #shorts" ou "BREAKING [DATE] : [FAIT] #shorts"
+- LONGUEUR : MAXIMUM 120 mots par langue (tout blocs confondus). Chaque phrase doit être courte et directe.
+"""

@@ -1,0 +1,29 @@
+# Dépendances du pipeline YouTube Shorts Économiques
+# Python 3.11+
+
+# Veille RSS
+requests>=2.31
+feedparser>=6.0
+
+# Script LLM (OpenRouter compatible)
+openai>=1.0
+
+# Visuels
+matplotlib>=3.7
+pandas>=2.0
+numpy>=1.24
+Pillow>=10.0
+# cairosvg>=2.7  # optionnel — pour overlays SVG émotionnels
+
+# Voix (TTS)
+edge-tts>=6.1
+gTTS>=2.3            # fallback (réseau)
+pyttsx3>=2.90        # fallback offline
+# piper-tts>=1.8     # optionnel (offline, haute qualité) — installer depuis .wheels/
+#                   # nécessite les modèles .onnx dans .venv/voices/
+
+# Montage vidéo
+imageio-ffmpeg>=0.4
+
+# Configuration env
+python-dotenv>=1.0

@@ -190,7 +190,7 @@ def publish_pending(date_str: str = None):
 
             try:
                 from pipeline.indexing_bing import indexer_bing
-                indexer_bing("https://plychaneconomie.blogspot.com/")
+                indexer_bing("https://plychaneconomie.blogspot.com/p/indexnow-key.html")
                 log.info("Indexation Bing/DuckDuckGo demandee")
             except Exception as e:
                 log.warning(f"Indexation Bing echouee: {e}")

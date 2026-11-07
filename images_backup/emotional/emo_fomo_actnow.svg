@@ -1,0 +1,19 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="#0B1D3A"/>
+
+  <!-- Central emoji/icon -->
+  <text x="540" y="800" font-size="280" text-anchor="middle" dominant-baseline="middle">📊</text>
+
+  <!-- Label FR -->
+  <text x="540" y="1150" font-size="56" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-family="system-ui, sans-serif">À saisir maintenant</text>
+
+  <!-- Accent line -->
+  <line x1="340" y1="1230" x2="740" y2="1230" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Subtitle -->
+  <text x="540" y="1300" font-size="36" fill="#888888" text-anchor="middle" font-family="system-ui, sans-serif">Concept visuel — EcoShorts</text>
+
+  <!-- Watermark -->
+  <text x="1040" y="1880" font-size="24" fill="#888888" text-anchor="end" opacity="0.4" font-family="system-ui, sans-serif">@EcoShorts</text>
+</svg>

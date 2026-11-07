@@ -1,0 +1,53 @@
+Tier,Concept FR,Concept EN,Concept ES,Type,Site Recommandé,Terme Recherche,URL Directe,Nom Fichier,Catégorie
+T2,Fed,Federal Reserve,Reserva Federal,Image Libre,Unsplash,"federal reserve, fed building","https://unsplash.com/s/photos/federal-reserve",t2_fed.jpg,Banques Centrales
+T2,BCE,ECB,BCE,Image Libre,Unsplash,"european central bank, ecb","https://unsplash.com/s/photos/ecb",t2_bce.jpg,Banques Centrales
+T2,BOJ,Bank of Japan,Banco de Japón,Image Libre,Pixabay,"bank of japan, boj,"tokyo","https://pixabay.com/illustrations/?q=bank+japan",t2_boj.jpg,Banques Centrales
+T2,Banque d'Angleterre,Bank of England,Banco de Inglaterra,Image Libre,Pixabay,"bank of england, old lady","https://pixabay.com/illustrations/?q=bank+england",t2_boe.jpg,Banques Centrales
+T2,Banque Centrale,Central Bank,Banco Central,Image Libre,Unsplash,"central bank, monetary policy","https://unsplash.com/s/photos/central-bank",t2_centralbank.jpg,Banques Centrales
+T2,Jerome Powell,Jerome Powell,Jerome Powell,Image Libre,Pixabay,"jerome powell, fed chair","https://pixabay.com/illustrations/?q=jerome+powell",t2_powell.jpg,Banques Centrales
+T2,Christine Lagarde,Christine Lagarde,Christine Lagarde,Image Libre,Pixabay,"christine lagarde, ecb president","https://pixabay.com/illustrations/?q=christine+lagarde",t2_lagarde.jpg,Banques Centrales
+T2,Ueda,Ueda BOJ,Ueda BOJ,Image Libre,Pixabay,"ueda, bank of japan governor","https://pixabay.com/illustrations/?q=ueda+boj",t2_ueda.jpg,Banques Centrales
+T2,Taux d'Intérêt,Interest Rate,Tasa de Interés,Image Libre,Unsplash,"interest rate, percentage","https://unsplash.com/s/photos/interest-rate",t2_interestrate.jpg,Banques Centrales
+T2,Taux Directeur,Policy Rate,Tasa Directora,Image Libre,Pixabay,"policy rate, official rate","https://pixabay.com/illustrations/?q=policy+rate",t2_policyrate.jpg,Banques Centrales
+T2,Minutes,FOMC Minutes,Actas,Image Libre,Unsplash,"meeting minutes, federal report","https://unsplash.com/s/photos/meeting-minutes",t2_minutes.jpg,Banques Centrales
+T2,Communiqué,Statement,Comunicado,Image Libre,Pixabay,"official statement, announcement","https://pixabay.com/illustrations/?q=official+statement",t2_statement.jpg,Banques Centrales
+T2,Forward Guidance,Forward Guidance,Guía Prospectiva,Image Libre,Unsplash,"forecast, future guidance","https://unsplash.com/s/photos/forecast",t2_guidance.jpg,Banques Centrales
+T2,CPI,CPI,IPC,Image Libre,Unsplash,"inflation consumer price index","https://unsplash.com/s/photos/inflation",t2_cpi.jpg,Indicateurs Macro
+T2,Rapport Inflation,Inflation Report,Informe de Inflación,Image Libre,Pixabay,"inflation report, data release","https://pixabay.com/illustrations/?q=inflation+report",t2_inflationreport.jpg,Indicateurs Macro
+T2,Emploi,Jobs,Empleos,Image Libre,Unsplash,"employment, job market, hiring","https://unsplash.com/s/photos/employment",t2_jobs.jpg,Indicateurs Macro
+T2,Rapport Emploi,Jobs Report,Reporte de Empleo,Image Libre,Unsplash,"jobs report data release","https://unsplash.com/s/photos/jobs-report",t2_jobsreport.jpg,Indicateurs Macro
+T2,NFP,Nonfarm Payroll,Nómina No Agrícola,Image Libre,Unsplash,"nonfarm payroll employment","https://unsplash.com/s/photos/nonfarm-payroll",t2_nfp.jpg,Indicateurs Macro
+T2,Chômage,Unemployment,Desempleo,Image Libre,Pixabay,"unemployment, jobless rate","https://pixabay.com/illustrations/?q=unemployment",t2_unemployment.jpg,Indicateurs Macro
+T2,Taux de Chômage,Unemployment Rate,Tasa de Desempleo,Image Libre,Unsplash,"unemployment rate statistics","https://unsplash.com/s/photos/unemployment-rate",t2_unemploymentrate.jpg,Indicateurs Macro
+T2,PIB,GDP,PIB,Image Libre,Unsplash,"gdp economic growth graph","https://unsplash.com/s/photos/gdp",t2_gdp.jpg,Indicateurs Macro
+T2,PPI,Producer Prices,IPP,Image Libre,Pixabay,"producer price index, manufacturing","https://pixabay.com/illustrations/?q=producer+prices",t2_ppi.jpg,Indicateurs Macro
+T2,PCE,Personal Consumption,ICE,Image Libre,Unsplash,"personal consumption expenditure","https://unsplash.com/s/photos/consumer-spending",t2_pce.jpg,Indicateurs Macro
+T2,Ventes au Détail,Retail Sales,Ventas Minoristas,Image Libre,Unsplash,"retail sales shopping","https://unsplash.com/s/photos/retail-sales",t2_retail.jpg,Indicateurs Macro
+T2,PMI,PMI,PMI,Image Libre,Unsplash,"purchasing managers index manufacturing","https://unsplash.com/s/photos/manufacturing",t2_pmi.jpg,Indicateurs Macro
+T2,ISM,ISM,ISM,Image Libre,Pixabay,"ism index manufacturing survey","https://pixabay.com/illustrations/?q=manufacturing",t2_ism.jpg,Indicateurs Macro
+T2,Balance Commerciale,Trade Balance,Balanza Comercial,Image Libre,Pixabay,"trade balance import export","https://pixabay.com/illustrations/?q=trade+balance",t2_tradebalance.jpg,Indicateurs Macro
+T2,S&P 500,S&P 500,S&P 500,Image Libre,Unsplash,"stock market sp500 index","https://unsplash.com/s/photos/stock-market",t2_sp500.jpg,Marchés Financiers
+T2,Nasdaq,Nasdaq,Nasdaq,Image Libre,Unsplash,"nasdaq tech stocks trading","https://unsplash.com/s/photos/nasdaq",t2_nasdaq.jpg,Marchés Financiers
+T2,Dow Jones,Dow Jones,Dow Jones,Image Libre,Pixabay,"dow jones stock index","https://pixabay.com/illustrations/?q=dow+jones",t2_dowjones.jpg,Marchés Financiers
+T2,CAC 40,CAC 40,CAC 40,Image Libre,Pixabay,"cac 40 paris bourse","https://pixabay.com/illustrations/?q=cac+40",t2_cac40.jpg,Marchés Financiers
+T2,DAX,DAX,DAX,Image Libre,Pixabay,"dax frankfurt stock germany","https://pixabay.com/illustrations/?q=dax",t2_dax.jpg,Marchés Financiers
+T2,Nikkei,Nikkei,Nikkei,Image Libre,Unsplash,"nikkei tokyo japan market","https://unsplash.com/s/photos/nikkei",t2_nikkei.jpg,Marchés Financiers
+T2,Marché Baissier,Bear Market,Mercado Bajista,Image Libre,Pixabay,"bear market downtrend pessimism","https://pixabay.com/illustrations/?q=bear+market",t2_bearmarket.jpg,Marchés Financiers
+T2,Marché Haussier,Bull Market,Mercado Alcista,Image Libre,Pixabay,"bull market uptrend optimism","https://pixabay.com/illustrations/?q=bull+market",t2_bullmarket.jpg,Marchés Financiers
+T2,Courbe des Rendements,Yield Curve,Curva de Rendimiento,Image Libre,Unsplash,"yield curve financial chart","https://unsplash.com/s/photos/yield-curve",t2_yieldcurve.jpg,Marchés Financiers
+T2,Inversion Courbe,Inverted Yield,Inversión de Curva,Cartoon SVG,Custom,"upside down curve inverted","",t2_invertedyield.svg,Marchés Financiers
+T2,Trésor,Treasury,Bonos del Tesoro,Image Libre,Unsplash,"treasury bonds government","https://unsplash.com/s/photos/treasury",t2_treasury.jpg,Marchés Financiers
+T2,Bund,Bund,Bund,Image Libre,Pixabay,"german bund bonds germany,"https://pixabay.com/illustrations/?q=german+bonds",t2_bund.jpg,Marchés Financiers
+T2,OAT,OAT,OAT,Image Libre,Pixabay,"oat french bonds france","https://pixabay.com/illustrations/?q=french+bonds",t2_oat.jpg,Marchés Financiers
+T2,Dollar Index,DXY,Índice del Dólar,Image Libre,Unsplash,"dollar index currency strength","https://unsplash.com/s/photos/dollar-index",t2_dxy.jpg,Marchés Financiers
+T2,EUR/USD,EUR/USD,EUR/USD,Image Libre,Unsplash,"euro dollar exchange rate","https://unsplash.com/s/photos/eur-usd",t2_eurusd.jpg,Marchés Financiers
+T2,Dollar Fort,Strong Dollar,Dólar Fuerte,Image Libre,Pixabay,"strong dollar power money","https://pixabay.com/illustrations/?q=strong+dollar",t2_strongdollar.jpg,Marchés Financiers
+T2,Dollar Faible,Weak Dollar,Dólar Débil,Image Libre,Pixabay,"weak dollar declining vulnerable","https://pixabay.com/illustrations/?q=weak+dollar",t2_weakdollar.jpg,Marchés Financiers
+T2,Or,Gold,Oro,Image Libre,Unsplash,"gold bars precious metal","https://unsplash.com/photos/gold-bars-stacked-on-a-dark-surface-j980acjBHtY",t2_gold.jpg,Matières Premières
+T2,Pétrole,Oil,Petróleo,Image Libre,Unsplash,"oil barrel petroleum","https://unsplash.com/s/photos/oil-barrel",t2_oil.jpg,Matières Premières
+T2,Brent,Brent Crude,Brent Crudo,Image Libre,Unsplash,"brent oil drilling platform","https://unsplash.com/s/photos/brent",t2_brent.jpg,Matières Premières
+T2,WTI,WTI Crude,WTI Petróleo,Image Libre,Pixabay,"wti crude texas oil","https://pixabay.com/illustrations/?q=texas+oil",t2_wti.jpg,Matières Premières
+T2,OPEC,OPEC,OPEP,Image Libre,Pixabay,"opec organization oil countries","https://pixabay.com/illustrations/?q=opec",t2_opec.jpg,Matières Premières
+T2,Gaz Naturel,Natural Gas,Gas Natural,Image Libre,Pixabay,"natural gas pipeline energy","https://pixabay.com/illustrations/?q=natural+gas",t2_naturalgas.jpg,Matières Premières
+T2,Cuivre,Copper,Cobre,Image Libre,Pixabay,"copper metal mining ore","https://pixabay.com/illustrations/?q=copper",t2_copper.jpg,Matières Premières
+T2,Argent,Silver,Plata,Image Libre,Unsplash,"silver bars precious metal","https://unsplash.com/s/photos/silver",t2_silver.jpg,Matières Premières

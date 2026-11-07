@@ -1,0 +1,86 @@
+INFO === PUBLISH PENDING - 2026-11-06 ===
+C:\Users\PLY\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\site-packages\google\api_core\_python_version_support.py:254: FutureWarning: You are using a Python version (3.11.15) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Videos uploadees sur YouTube: 52
+INFO Video fr: 6t7m8Z8-NJ0
+INFO Video en: 6HUWe-7Tl3o
+INFO Video es: 5RXI_6gz7So
+INFO Retrying request in 0.442234 seconds (retry 1 of 2)
+INFO Retrying request in 0.854022 seconds (retry 2 of 2)
+WARNING Ollama (local)/llama3.2:latest: Request timed out.
+INFO Retrying request in 0.396859 seconds (retry 1 of 2)
+INFO Retrying request in 0.950009 seconds (retry 2 of 2)
+WARNING Ollama (local)/llama3.2:latest: Request timed out.
+INFO Retrying request in 0.398342 seconds (retry 1 of 2)
+INFO Retrying request in 0.822138 seconds (retry 2 of 2)
+WARNING Ollama (local)/qwen2.5-coder:7b: Request timed out.
+INFO Retrying request in 0.406647 seconds (retry 1 of 2)
+INFO Retrying request in 0.847937 seconds (retry 2 of 2)
+WARNING Ollama (local)/qwen2.5-coder:7b: Request timed out.
+INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING Groq/qwen/qwen3.8-27b: Error code: 403 - {'error': {'message': 'Access denied. Please check your networ
+INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING Groq/qwen/qwen3.8-27b: Error code: 403 - {'error': {'message': 'Access denied. Please check your networ
+INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING Groq/openai/gpt-oss-20b: Error code: 403 - {'error': {'message': 'Access denied. Please check your networ
+INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING Groq/openai/gpt-oss-20b: Error code: 403 - {'error': {'message': 'Access denied. Please check your networ
+INFO HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO LLM OK via Google Gemini/gemini-2.5-flash
+WARNING JSON parse error: Unterminated string starting at: line 2 column 14 (char 15)
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO Article créé: 7620799823305578335 (draft=False)
+INFO Article Blogger fr cree: https://www.blogger.com/blog/post/edit/4322044525709685461/7620799823305578335
+INFO Retrying request in 0.451072 seconds (retry 1 of 2)
+INFO Retrying request in 0.874800 seconds (retry 2 of 2)
+WARNING Ollama (local)/llama3.2:latest: Request timed out.
+INFO Retrying request in 0.474877 seconds (retry 1 of 2)
+INFO Retrying request in 0.888560 seconds (retry 2 of 2)
+WARNING Ollama (local)/llama3.2:latest: Request timed out.
+INFO Retrying request in 0.444966 seconds (retry 1 of 2)
+INFO Retrying request in 0.766410 seconds (retry 2 of 2)
+WARNING Ollama (local)/qwen2.5-coder:7b: Request timed out.
+INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+INFO Retrying request in 0.484656 seconds (retry 1 of 2)
+INFO Retrying request in 0.894113 seconds (retry 2 of 2)
+WARNING Ollama (local)/qwen2.5-coder:7b: Request timed out.
+INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO LLM OK via Groq/qwen/qwen3.8-27b
+INFO Article blog genere via LLM multi-provider
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO Article créé: 874360380847303021 (draft=False)
+INFO Article Blogger en cree: https://www.blogger.com/blog/post/edit/4322044525709685461/874360380847303021
+INFO Retrying request in 0.439452 seconds (retry 1 of 2)
+INFO Retrying request in 0.993798 seconds (retry 2 of 2)
+WARNING Ollama (local)/llama3.2:latest: Request timed out.
+INFO Retrying request in 0.408542 seconds (retry 1 of 2)
+INFO Retrying request in 0.957264 seconds (retry 2 of 2)
+WARNING Ollama (local)/llama3.2:latest: Request timed out.
+INFO Retrying request in 0.437463 seconds (retry 1 of 2)
+INFO Retrying request in 0.951706 seconds (retry 2 of 2)
+WARNING Ollama (local)/qwen2.5-coder:7b: Request timed out.
+INFO Retrying request in 0.499769 seconds (retry 1 of 2)
+INFO Retrying request in 0.838789 seconds (retry 2 of 2)
+WARNING Ollama (local)/qwen2.5-coder:7b: Request timed out.
+INFO HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO LLM OK via Groq/qwen/qwen3.8-27b
+INFO Article blog genere via LLM multi-provider
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO Article créé: 3281343656584709802 (draft=False)
+INFO Article Blogger es cree: https://www.blogger.com/blog/post/edit/4322044525709685461/3281343656584709802
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Indexe : https://plychaneconomie.blogspot.com/
+INFO Indexation Google demandee
+INFO Indexe Bing/DuckDuckGo: https://plychaneconomie.blogspot.com/
+INFO Indexation Bing/DuckDuckGo demandee
+INFO Post Facebook publie: 1389261604274221_122105812959528594
+INFO Post Facebook fr cree: 1389261604274221_122105812959528594
+INFO Post Facebook publie: 1389261604274221_122105812977528594
+INFO Post Facebook en cree: 1389261604274221_122105812977528594
+INFO Post Facebook publie: 1389261604274221_122105813019528594
+INFO Post Facebook es cree: 1389261604274221_122105813019528594
+INFO === PUBLISH PENDING TERMINE ===

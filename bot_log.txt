@@ -1,0 +1,3 @@
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.

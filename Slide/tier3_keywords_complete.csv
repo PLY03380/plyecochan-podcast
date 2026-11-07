@@ -1,0 +1,46 @@
+Tier,Concept FR,Concept EN,Concept ES,Type,Site Recommandé,Terme Recherche,URL Directe,Nom Fichier,Catégorie
+T3,Croissance,Growth,Crecimiento,Image Libre,Unsplash,"business growth upward arrow","https://unsplash.com/s/photos/business-growth",t3_growth.jpg,Croissance
+T3,Ralentissement,Slowdown,Desaceleración,Image Libre,Pixabay,"economic slowdown declining","https://pixabay.com/illustrations/?q=slowdown",t3_slowdown.jpg,Croissance
+T3,Expansion,Expansion,Expansión,Image Libre,Unsplash,"expansion growth enlargement","https://unsplash.com/s/photos/expansion",t3_expansion.jpg,Croissance
+T3,Contraction,Contraction,Contracción,Image Libre,Pixabay,"contraction shrink decline","https://pixabay.com/illustrations/?q=contraction",t3_contraction.jpg,Croissance
+T3,Atterrissage Doux,Soft Landing,Aterrizaje Suave,Cartoon SVG,Custom,"plane landing smooth","",t3_softlanding.svg,Croissance
+T3,Confiance Consommateurs,Consumer Confidence,Confianza del Consumidor,Image Libre,Unsplash,"consumer confidence shopping","https://unsplash.com/s/photos/consumer-confidence",t3_consumconf.jpg,Croissance
+T3,Confiance Entreprises,Business Confidence,Confianza Empresarial,Image Libre,Pixabay,"business confidence ceo","https://pixabay.com/illustrations/?q=business+confidence",t3_bizconf.jpg,Croissance
+T3,Dépenses Consommateurs,Consumer Spending,Gasto del Consumidor,Image Libre,Unsplash,"consumer spending shopping cart","https://unsplash.com/s/photos/consumer-spending",t3_spending.jpg,Croissance
+T3,Emploi,Employment,Empleo,Image Libre,Unsplash,"employment hiring job interview","https://unsplash.com/s/photos/employment",t3_employment.jpg,Emploi
+T3,Embauche,Hiring,Contratación,Image Libre,Unsplash,"hiring recruitment job opening","https://unsplash.com/s/photos/hiring",t3_hiring.jpg,Emploi
+T3,ADP,ADP Report,Reporte ADP,Image Libre,Unsplash,"adp employment data report","https://unsplash.com/s/photos/employment-data",t3_adp.jpg,Emploi
+T3,JOLTS,Job Openings,JOLTS,Image Libre,Pixabay,"job openings vacancy recruitment","https://pixabay.com/illustrations/?q=job+openings",t3_jolts.jpg,Emploi
+T3,Demandes Chômage,Unemployment Claims,Solicitudes de Desempleo,Image Libre,Pixabay,"unemployment claims jobless","https://pixabay.com/illustrations/?q=unemployment+claims",t3_claims.jpg,Emploi
+T3,Taux de Participation,Participation Rate,Tasa de Participación,Image Libre,Unsplash,"labor force participation","https://unsplash.com/s/photos/labor-force",t3_participation.jpg,Emploi
+T3,Croissance Salaires,Wage Growth,Crecimiento de Salarios,Image Libre,Pixabay,"wage increase salary raising","https://pixabay.com/illustrations/?q=wage+increase",t3_wagegrowth.jpg,Emploi
+T3,Licenciements,Layoffs,Despidos,Image Libre,Pixabay,"layoffs job loss unemployment","https://pixabay.com/illustrations/?q=layoffs",t3_layoffs.jpg,Emploi
+T3,Résultats,Earnings,Resultados,Image Libre,Unsplash,"business earnings financial results","https://unsplash.com/s/photos/earnings",t3_earnings.jpg,Finance
+T3,Chiffre d'Affaires,Revenue,Ingresos,Image Libre,Unsplash,"revenue growth sales income","https://unsplash.com/s/photos/revenue",t3_revenue.jpg,Finance
+T3,Profit,Profit,Ganancias,Image Libre,Pixabay,"profit earnings money growing","https://pixabay.com/illustrations/?q=profit",t3_profit.jpg,Finance
+T3,Fusion,Merger,Fusión,Image Libre,Pixabay,"merger acquisition handshake deal","https://pixabay.com/illustrations/?q=merger",t3_merger.jpg,Finance
+T3,Acquisition,Acquisition,Adquisición,Image Libre,Pixabay,"acquisition takeover deal done","https://pixabay.com/illustrations/?q=acquisition",t3_acquisition.jpg,Finance
+T3,IPO,IPO,OPI,Image Libre,Unsplash,"ipo initial public offering","https://unsplash.com/s/photos/ipo",t3_ipo.jpg,Finance
+T3,Dividende,Dividend,Dividendo,Image Libre,Pixabay,"dividend payment shares stock","https://pixabay.com/illustrations/?q=dividend",t3_dividend.jpg,Finance
+T3,Rachat d'Actions,Buyback,Recompra de Acciones,Image Libre,Unsplash,"stock buyback share repurchase","https://unsplash.com/s/photos/buyback",t3_buyback.jpg,Finance
+T3,Tech Layoffs,Tech Layoffs,Despidos Tech,Image Libre,Pixabay,"tech layoffs job loss","https://pixabay.com/illustrations/?q=tech+layoffs",t3_techlayoffs.jpg,Finance
+T3,Dépenses IA,AI Capex,Capex IA,Image Libre,Unsplash,"artificial intelligence technology,"https://unsplash.com/s/photos/artificial-intelligence",t3_aicapex.jpg,Finance
+T3,Immobilier,Housing,Vivienda,Image Libre,Unsplash,"real estate houses property","https://unsplash.com/s/photos/real-estate",t3_housing.jpg,Immobilier
+T3,Taux Hypothécaire,Mortgage Rate,Tasa Hipotecaria,Image Libre,Pixabay,"mortgage home loan interest","https://pixabay.com/illustrations/?q=mortgage",t3_mortgage.jpg,Immobilier
+T3,Ventes Immobilières,Home Sales,Ventas de Viviendas,Image Libre,Unsplash,"home sales real estate","https://unsplash.com/s/photos/home-sales",t3_homesales.jpg,Immobilier
+T3,Construction,Construction,Construcción,Image Libre,Unsplash,"construction building development","https://unsplash.com/s/photos/construction",t3_construction.jpg,Immobilier
+T3,Crise Énergétique,Energy Crisis,Crisis Energética,Image Libre,Pixabay,"energy crisis blackout power","https://pixabay.com/illustrations/?q=energy+crisis",t3_energycrisis.jpg,Énergie
+T3,Énergie Solaire,Solar,Energía Solar,Image Libre,Unsplash,"solar panels energy sun","https://unsplash.com/s/photos/solar-panels",t3_solar.jpg,Énergie
+T3,Énergie Éolienne,Wind,Energía Eólica,Image Libre,Unsplash,"wind turbines renewable","https://unsplash.com/s/photos/wind-turbine",t3_wind.jpg,Énergie
+T3,Énergies Renouvelables,Renewable,Energías Renovables,Image Libre,Unsplash,"renewable energy clean","https://unsplash.com/s/photos/renewable-energy",t3_renewable.jpg,Énergie
+T3,Voiture Électrique,EV,Vehículos Eléctricos,Image Libre,Unsplash,"electric vehicle ev car","https://unsplash.com/s/photos/electric-vehicle",t3_ev.jpg,Énergie
+T3,Inflation Sous-jacente,Core Inflation,Inflación Subyacente,Image Libre,Pixabay,"core inflation underlying","https://pixabay.com/illustrations/?q=core+inflation",t3_coreinflation.jpg,Inflation
+T3,Compte Courant,Current Account,Cuenta Corriente,Image Libre,Pixabay,"current account balance payments","https://pixabay.com/illustrations/?q=current+account",t3_currentaccount.jpg,Finance
+T3,Tarifs,Tariffs,Aranceles,Image Libre,Pixabay,"tariff trade barrier customs","https://pixabay.com/illustrations/?q=tariffs",t3_tariffs.jpg,Commerce
+T3,Guerre Commerciale,Trade War,Guerra Comercial,Image Libre,Pixabay,"trade war conflict import export","https://pixabay.com/illustrations/?q=trade+war",t3_tradewar.jpg,Commerce
+T3,Chaîne d'Approvisionnement,Supply Chain,Cadena de Suministros,Image Libre,Unsplash,"supply chain logistics shipping","https://unsplash.com/s/photos/supply-chain",t3_supplychian.jpg,Commerce
+T3,BRICS,BRICS,BRICS,Image Libre,Pixabay,"brics countries emerging markets","https://pixabay.com/illustrations/?q=brics",t3_brics.jpg,Géopolitique
+T3,FMI,IMF,FMI,Image Libre,Pixabay,"imf international monetary fund","https://pixabay.com/illustrations/?q=imf",t3_imf.jpg,Institutions
+T3,Banque Mondiale,World Bank,Banco Mundial,Image Libre,Pixabay,"world bank development lending","https://pixabay.com/illustrations/?q=world+bank",t3_worldbank.jpg,Institutions
+T3,G7,G7,G7,Image Libre,Pixabay,"g7 nations leaders meeting","https://pixabay.com/illustrations/?q=g7",t3_g7.jpg,Institutions
+T3,G20,G20,G20,Image Libre,Pixabay,"g20 world economy summit","https://pixabay.com/illustrations/?q=g20",t3_g20.jpg,Institutions

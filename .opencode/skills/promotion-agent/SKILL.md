@@ -44,8 +44,25 @@ Posts comments on relevant YouTube videos.
 ### 1. YouTube Comments
 - Search for economic/finance videos in FR/EN/ES
 - Post strategic comments with links to PlyChan videos
-- Max 3 comments per run to avoid spam detection
+- Max 10 comments per run (up from 3)
 - Track commented video IDs to avoid duplicates
+
+### 2. Auto-Reply to Comments
+- Automatically reply to ALL comments received on our videos
+- 4 reply templates per language (fr/en/es)
+- Avoids replying to our own comments
+- Skips already-replied threads
+
+### 3. Multi-Platform Publishing
+- Facebook: 3 posts/day (FR/EN/ES) with blog links
+- Medium: publish articles (requires MEDIUM_TOKEN)
+- Reddit: search + post comments (requires REDDIT_CLIENT_ID)
+- Twitter: search tweets (posting requires OAuth 1.0a)
+
+### 4. Thumbnail Optimization
+- Generate 3-4 word thumbnail text from video content
+- Extract numbers and key terms
+- Different from title (no duplication)
 
 ### 2. Facebook Posts
 - Share blog articles with video links

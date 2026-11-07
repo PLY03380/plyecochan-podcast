@@ -1,0 +1,38 @@
+Tier,Concept FR,Concept EN,Concept ES,Type,Site Recommandé,Terme Recherche,URL Directe,Nom Fichier,Emojis Impact
+T1,Record,All-time High,Récord Histórico,Image Libre,Unsplash,"mountain peak, summit","https://unsplash.com/s/photos/mountain-peak",t1_record.jpg,🏔️⭐
+T1,All-time Low,All-time Low,Mínimo Histórico,Image Libre,Pixabay,"lowest point, bottom, valley","https://pixabay.com/illustrations/?q=lowest+point",t1_alltimelow.jpg,📉
+T1,Jamais Vu,First Time,Por Primera Vez,Image Libre,Unsplash,"historic moment, unprecedented","https://unsplash.com/s/photos/historic",t1_firsttime.jpg,✨
+T1,Sans Précédent,Unprecedented,Sin Precedentes,Image Libre,Pixabay,"unprecedented, never before","https://pixabay.com/illustrations/?q=unprecedented",t1_unprecedented.jpg,🔥
+T1,Sommet Historique,Historic Peak,Cumbre Histórica,Cartoon SVG,Custom,"mountain flag peak","",t1_historic_peak.svg,🏁
+T1,Plus Bas,Lowest Point,Punto Más Bajo,Image Libre,Pixabay,"bottom, lowest, deep valley","https://pixabay.com/illustrations/?q=deep+valley",t1_lowest.jpg,⬇️
+T1,Crash,Crash,Crash,Image Libre,Unsplash,"stock market crash, downtrend","https://unsplash.com/s/photos/stock-market-crash",t1_crash.jpg,💥
+T1,Krach,Krach,Colapso,Image Libre,Pixabay,"krach, collapse, market crash","https://pixabay.com/illustrations/?q=market+crash",t1_krach.jpg,📉
+T1,Effondrement,Collapse,Derrumbe,Image Libre,Pixabay,"building collapse, ruins","https://pixabay.com/illustrations/?q=building+collapse",t1_collapse.jpg,🏚️
+T1,Recession,Recession,Recesión,Image Libre,Unsplash,"economic recession, downturn","https://unsplash.com/s/photos/recession",t1_recession.jpg,📊
+T1,Récession,Recession (FR),Recesión (FR),Image Libre,Pixabay,"recession economic decline","https://pixabay.com/illustrations/?q=economic+decline",t1_recession_fr.jpg,📉
+T1,Crise,Crisis,Crisis,Image Libre,Unsplash,"financial crisis, stress","https://unsplash.com/s/photos/financial-crisis",t1_crisis.jpg,🆘
+T1,Stagflation,Stagflation,Estanflación,Image Libre,Pixabay,"stagflation, prices rising stagnation","https://pixabay.com/illustrations/?q=stagflation",t1_stagflation.jpg,⚡
+T1,Hyperinflation,Hyperinflation,Hiperinflación,Image Libre,Pixabay,"hyperinflation, money burning","https://pixabay.com/illustrations/?q=hyperinflation",t1_hyperinflation.jpg,🔥💰
+T1,Faillite,Bankruptcy,Quiebra,Image Libre,Pixabay,"bankruptcy, closed sign","https://pixabay.com/illustrations/?q=bankruptcy",t1_bankruptcy.jpg,⛔
+T1,Bankrupt,Bankrupt,Insolvente,Image Libre,Unsplash,"bankrupt, financial failure","https://unsplash.com/s/photos/bankruptcy",t1_bankrupt.jpg,💼
+T1,Défaut,Default,Incumplimiento,Image Libre,Pixabay,"default, failure to pay","https://pixabay.com/illustrations/?q=default+payment",t1_default.jpg,❌
+T1,Bank Run,Bank Run,Pánico Bancario,Image Libre,Pixabay,"bank run, panic, queue","https://pixabay.com/illustrations/?q=bank+run",t1_bankrun.jpg,🏃
+T1,Crise de la Dette,Debt Crisis,Crisis de Deuda,Image Libre,Unsplash,"debt crisis, money worry","https://unsplash.com/s/photos/debt-crisis",t1_debtcrisis.jpg,💸
+T1,Choc d'Offre,Supply Shock,Choque de Oferta,Image Libre,Pixabay,"supply shock, shortage","https://pixabay.com/illustrations/?q=supply+shock",t1_supplyshock.jpg,📦
+T1,Baisse de Taux,Rate Cut,Corte de Tasas,Image Libre,Unsplash,"interest rate down arrow","https://unsplash.com/s/photos/interest-rate-decrease",t1_ratecut.jpg,📉💚
+T1,Hausse de Taux,Rate Hike,Aumento de Tasas,Image Libre,Unsplash,"interest rate up arrow","https://unsplash.com/s/photos/interest-rate-increase",t1_ratehike.jpg,📈❌
+T1,Pivot,Fed Pivot,Cambio de Dirección,Image Libre,Unsplash,"pivot, direction change","https://unsplash.com/s/photos/pivot",t1_pivot.jpg,🔄
+T1,Fed Pivot,Fed Pivot (EN),Cambio Fed,Image Libre,Pixabay,"fed change direction pivot","https://pixabay.com/illustrations/?q=fed+pivot",t1_fedpivot.jpg,🔄
+T1,Quantitative Easing,Quantitative Easing,Flexibilización Cuantitativa,Cartoon SVG,Custom,"money printing, balloon","",t1_qe.svg,🖨️💵
+T1,QE,QE,QE,Cartoon SVG,Custom,"easing stimulus money","",t1_qe_short.svg,💰
+T1,Quantitative Tightening,Quantitative Tightening,Endurecimiento Cuantitativo,Cartoon SVG,Custom,"money shrinking squeeze","",t1_qt.svg,🛑
+T1,QT,QT,QT,Cartoon SVG,Custom,"tightening money reduction","",t1_qt_short.svg,📉
+T1,Réunion d'Urgence,Emergency Meeting,Reunión de Emergencia,Image Libre,Unsplash,"emergency meeting, crisis discussion","https://unsplash.com/s/photos/emergency-meeting",t1_emergencymeeting.jpg,🚨
+T1,Sanctions,Sanctions,Sanciones,Image Libre,Pixabay,"sanctions, embargo, barriers","https://pixabay.com/illustrations/?q=sanctions",t1_sanctions.jpg,⛔
+T1,Embargo,Embargo,Embargo,Image Libre,Pixabay,"embargo, blocked trade","https://pixabay.com/illustrations/?q=embargo",t1_embargo.jpg,🚫
+T1,Guerre,War,Guerra,Image Libre,Pixabay,"war, conflict, tension","https://pixabay.com/illustrations/?q=conflict",t1_war.jpg,⚔️
+T1,Conflit,Conflict,Conflicto,Image Libre,Pixabay,"conflict tension struggle","https://pixabay.com/illustrations/?q=conflict",t1_conflict.jpg,💢
+T1,OPEC Cut,OPEC Reduction,Corte OPEP,Image Libre,Unsplash,"oil barrel reduction supply","https://unsplash.com/s/photos/oil-barrel",t1_opeccut.jpg,🛢️
+T1,Réduction OPEP,OPEC Reduction (FR),Corte OPEP (ES),Image Libre,Pixabay,"opec reduce oil production","https://pixabay.com/illustrations/?q=opec+cut",t1_reduceopec.jpg,🛢️
+T1,Choc Géopolitique,Geopolitical Shock,Choque Geopolítico,Image Libre,Pixabay,"geopolitical crisis tension","https://pixabay.com/illustrations/?q=geopolitical",t1_geopolitical.jpg,🌍
+T1,Strait Hormuz,Strait of Hormuz,Estrecho de Ormuz,Image Libre,Pixabay,"strait hormuz shipping route","https://pixabay.com/illustrations/?q=strait+hormuz",t1_straithormuz.jpg,🚢

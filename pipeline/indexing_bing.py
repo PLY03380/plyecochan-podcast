@@ -22,7 +22,7 @@ def indexer_bing(url: str) -> bool:
     payload = {
         "host": BLOG_HOST,
         "key": INDEXNOW_KEY,
-        "keyLocation": f"https://{BLOG_HOST}/{INDEXNOW_KEY}.txt",
+        "keyLocation": "https://plychaneconomie.blogspot.com/p/indexnow-key.html",
         "urlList": [url],
     }
     try:
@@ -49,7 +49,7 @@ def indexer_bing_plusieurs(urls: List[str]) -> int:
     payload = {
         "host": BLOG_HOST,
         "key": INDEXNOW_KEY,
-        "keyLocation": f"https://{BLOG_HOST}/{INDEXNOW_KEY}.txt",
+        "keyLocation": "https://plychaneconomie.blogspot.com/p/indexnow-key.html",
         "urlList": urls,
     }
     try:

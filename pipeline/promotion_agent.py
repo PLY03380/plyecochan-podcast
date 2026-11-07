@@ -104,6 +104,92 @@ def post_youtube_comment(video_id: str, comment_text: str) -> Optional[str]:
         return None
 
 
+def reply_to_comments() -> int:
+    """Repond a TOUS les commentaires recus sur nos videos."""
+    cfg = _load_config()
+    replied = 0
+    try:
+        from pipeline.upload import get_authenticated_service
+        yt = get_authenticated_service()
+
+        # Lister nos videos recentes
+        ch = yt.channels().list(part="contentDetails", mine=True).execute()
+        uploads = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+        pl = yt.playlistItems().list(part="snippet", playlistId=uploads, maxResults=20).execute()
+
+        for item in pl.get("items", []):
+            vid = item["snippet"]["resourceId"]["videoId"]
+            # Lister les commentaires de cette video
+            try:
+                comments = yt.commentThreads().list(
+                    part="snippet", videoId=vid, maxResults=50
+                ).execute()
+                for thread in comments.get("items", []):
+                    top = thread["snippet"]["topLevelComment"]["snippet"]
+                    comment_text = top.get("textDisplay", "")
+                    comment_author = top.get("authorDisplayName", "")
+                    comment_id = thread["snippet"]["topLevelComment"]["id"]
+                    # Ne pas repondre a nos propres commentaires
+                    if comment_author.lower() in ("plychan", "plychaneco"):
+                        continue
+                    # Verifier si deja repondu
+                    replies = thread.get("replies", {}).get("comments", [])
+                    already_replied = any(
+                        r["snippet"]["authorDisplayName"].lower() in ("plychan", "plychaneco")
+                        for r in replies
+                    )
+                    if already_replied:
+                        continue
+                    # Generer une reponse
+                    reply_text = _generate_reply(comment_text, "fr")
+                    try:
+                        yt.comments().insert(
+                            part="snippet",
+                            body={
+                                "snippet": {
+                                    "parentId": comment_id,
+                                    "textOriginal": reply_text,
+                                }
+                            }
+                        ).execute()
+                        replied += 1
+                        log.info(f"Reponse postee sur {vid}: {reply_text[:50]}")
+                        time.sleep(1)
+                    except Exception as e:
+                        log.warning(f"Reponse echouee: {e}")
+            except Exception as e:
+                log.warning(f"Commentaires video {vid}: {e}")
+    except Exception as e:
+        log.error(f"reply_to_comments echoue: {e}")
+    return replied
+
+
+def _generate_reply(comment: str, lang: str = "fr") -> str:
+    """Genere une reponse a un commentaire."""
+    templates = {
+        "fr": [
+            "Merci pour ton commentaire ! N'hesite pas a t'abonner pour plus d'analyses.",
+            "Merci ! Quel aspect t'interesse le plus ? Je peux faire une video dessus.",
+            "Super remarque ! Je vais approfondir ce sujet dans une prochaine video.",
+            "Merci de ton retour ! Abonne-toi pour ne rien rater.",
+        ],
+        "en": [
+            "Thanks for your comment! Subscribe for more analysis.",
+            "Great point! I'll cover this in more detail in an upcoming video.",
+            "Thanks! What aspect interests you most? I can make a video about it.",
+            "Appreciate the feedback! Subscribe to stay updated.",
+        ],
+        "es": [
+            "Gracias por tu comentario! Suscribete para mas analisis.",
+            "Buen punto! Profundizare en este tema en un proximo video.",
+            "Gracias! Que aspecto te interesa mas? Puedo hacer un video sobre ello.",
+            "Agradezco tu feedback! Suscribete para no perderte nada.",
+        ],
+    }
+    import random
+    return random.choice(templates.get(lang, templates["en"]))
+
+
 def post_facebook(text: str, link: str = None) -> Optional[str]:
     """Poste sur la page Facebook."""
     cfg = _load_config()
@@ -163,24 +249,28 @@ def search_reddit_posts(query: str, subreddits: List[str] = None) -> List[Dict]:
     results = []
     try:
         import requests
-        for sub in subreddits[:3]:
-            r = requests.get(
-                f"https://www.reddit.com/r/{sub}/search.json",
-                params={"q": query, "restrict_sr": "on", "sort": "new", "limit": 5},
-                headers={"User-Agent": "PlyChanBot/1.0"},
-                timeout=15,
-            )
-            if r.status_code == 200:
-                data = r.json()
-                for post in data.get("data", {}).get("children", []):
-                    p = post["data"]
-                    results.append({
-                        "subreddit": sub,
-                        "title": p.get("title", ""),
-                        "url": f"https://reddit.com{p.get('permalink', '')}",
-                        "score": p.get("score", 0),
-                        "num_comments": p.get("num_comments", 0),
-                    })
+        for sub in subreddits[:2]:
+            try:
+                r = requests.get(
+                    f"https://www.reddit.com/r/{sub}/search.json",
+                    params={"q": query, "restrict_sr": "on", "sort": "new", "limit": 3, "raw_json": 1},
+                    headers={"User-Agent": "PlyChanBot/1.0 (by /u/plychan)"},
+                    timeout=10,
+                )
+                if r.status_code == 200 and r.text:
+                    data = r.json()
+                    for post in data.get("data", {}).get("children", []):
+                        p = post["data"]
+                        results.append({
+                            "subreddit": sub,
+                            "title": p.get("title", ""),
+                            "url": f"https://reddit.com{p.get('permalink', '')}",
+                            "score": p.get("score", 0),
+                            "num_comments": p.get("num_comments", 0),
+                        })
+            except Exception as e:
+                log.warning(f"Reddit {sub}: {e}")
+            time.sleep(1)
     except Exception as e:
         log.error(f"Recherche Reddit echouee: {e}")
     return results
@@ -236,6 +326,102 @@ def generate_promo_comment(video_title: str, video_url: str, lang: str = "fr") -
     return random.choice(templates.get(lang, templates["en"]))
 
 
+def post_medium_article(title: str, content: str, tags: List[str] = None) -> Optional[str]:
+    """Publie un article sur Medium (necessite un integration token)."""
+    cfg = _load_config()
+    token = getattr(cfg, "MEDIUM_TOKEN", "")
+    if not token:
+        log.warning("Medium: pas de token (MEDIUM_TOKEN requis)")
+        return None
+    try:
+        import requests
+        # Get user ID
+        r = requests.get(
+            "https://api.medium.com/v1/me",
+            headers={"Authorization": f"Bearer {token}"},
+            timeout=15,
+        )
+        r.raise_for_status()
+        user_id = r.json()["data"]["id"]
+        # Create post
+        r = requests.post(
+            f"https://api.medium.com/v1/users/{user_id}/posts",
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json={
+                "title": title,
+                "contentFormat": "html",
+                "content": content,
+                "tags": tags or ["economy", "finance"],
+                "publishStatus": "public",
+            },
+            timeout=30,
+        )
+        r.raise_for_status()
+        post_url = r.json()["data"]["url"]
+        log.info(f"Article Medium publie: {post_url}")
+        return post_url
+    except Exception as e:
+        log.error(f"Medium echoue: {e}")
+        return None
+
+
+def post_reddit_comment(subreddit: str, post_id: str, comment_text: str) -> Optional[str]:
+    """Poste un commentaire sur Reddit (necessite OAuth)."""
+    # Reddit posting requires OAuth credentials
+    cfg = _load_config()
+    if not hasattr(cfg, "REDDIT_CLIENT_ID"):
+        log.warning("Reddit: pas de credentials (REDDIT_CLIENT_ID requis)")
+        return None
+    try:
+        import requests
+        # Get access token
+        auth = requests.auth.HTTPBasicAuth(cfg.REDDIT_CLIENT_ID, cfg.REDDIT_CLIENT_SECRET)
+        r = requests.post(
+            "https://www.reddit.com/api/v1/access_token",
+            auth=auth,
+            data={"grant_type": "client_credentials"},
+            headers={"User-Agent": "PlyChanBot/1.0"},
+            timeout=15,
+        )
+        r.raise_for_status()
+        token = r.json()["access_token"]
+        # Post comment
+        r = requests.post(
+            f"https://oauth.reddit.com/api/comment",
+            headers={"Authorization": f"Bearer {token}", "User-Agent": "PlyChanBot/1.0"},
+            data={"thing_id": f"t3_{post_id}", "text": comment_text},
+            timeout=15,
+        )
+        r.raise_for_status()
+        comment_id = r.json().get("json", {}).get("data", {}).get("things", [{}])[0].get("data", {}).get("id")
+        log.info(f"Commentaire Reddit poste: {comment_id}")
+        return comment_id
+    except Exception as e:
+        log.error(f"Reddit comment echoue: {e}")
+        return None
+
+
+def optimize_thumbnail(title: str, blocs: dict) -> str:
+    """Genere un texte de thumbnail optimise (3-4 mots max, different du titre)."""
+    import re
+    STOP = {"the", "a", "an", "of", "for", "to", "in", "on", "and", "or", "is", "are", "with",
+            "your", "you", "my", "i", "this", "that", "it", "how", "what", "why", "le", "la",
+            "les", "de", "du", "des", "un", "une", "et", "ou", "est", "sont", "pour", "dans",
+            "el", "la", "los", "las", "de", "del", "un", "una", "y", "o", "es", "son", "para", "en"}
+    # Extraire les chiffres du titre
+    nums = re.findall(r"\d[\d,.]*%?", title)
+    if nums:
+        return nums[0]
+    # Prendre les mots significatifs des blocs
+    all_text = " ".join(blocs.values()).lower()
+    words = [w for w in re.findall(r"[a-zà-ÿ0-9']+", all_text) if w not in STOP and len(w) > 3]
+    # Compter la frequence
+    from collections import Counter
+    counts = Counter(words)
+    top = [w for w, _ in counts.most_common(3)]
+    return " ".join(top).upper()[:20]
+
+
 def run_promotion():
     """Execute la promotion automatique."""
     cfg = _load_config()
@@ -264,13 +450,13 @@ def run_promotion():
     external_videos = [v for v in all_yt_results if our_channel.lower() not in v["channel"].lower()]
     log.info(f"Videos externes trouvees: {len(external_videos)}")
 
-    # 2. Poster des commentaires sur les videos pertinentes (max 3 par run)
+    # 2. Poster des commentaires sur les videos pertinentes (max 10 par run)
     commented_ids = {c["video_id"] for c in tracker.get("youtube_comments", [])}
     comments_posted = 0
-    for video in external_videos[:3]:
+    for video in external_videos[:10]:
         if video["video_id"] in commented_ids:
             continue
-        if comments_posted >= 3:
+        if comments_posted >= 10:
             break
         comment = generate_promo_comment(
             video["title"], "https://youtube.com/@PlyChan", "fr"
@@ -324,10 +510,15 @@ def run_promotion():
                             })
                     break
 
+    # 5. Repondre a TOUS les commentaires recus
+    replied = reply_to_comments()
+    log.info(f"Reponses aux commentaires: {replied}")
+
     # 6. Sauvegarder le tracker
     _save_tracker(tracker)
     log.info("=== PROMOTION TERMINEE ===")
     log.info(f"Commentaires YouTube: {comments_posted}")
+    log.info(f"Reponses: {replied}")
     log.info(f"Posts Reddit trouves: {len(reddit_results)}")
     log.info(f"Tweets trouves: {len(twitter_results)}")
 
@@ -349,7 +540,8 @@ if __name__ == "__main__":
     if args.search:
         results = search_youtube_videos("économie actualité", max_results=5)
         for r in results:
-            print(f"  {r['title'][:60]} - {r['channel']}")
+            safe_title = r['title'][:60].encode('ascii', 'replace').decode()
+            print(f"  {safe_title} - {r['channel']}")
     elif args.comment:
         # Commenter sur les videos trouvees
         results = search_youtube_videos("économie actualité", max_results=3)
@@ -359,4 +551,4 @@ if __name__ == "__main__":
             print(f"  Commentaire: {comment[:80]}")
     else:
         result = run_promotion()
-        print(json.dumps(result, indent=2))
+        print(json.dumps(result, indent=2, ensure_ascii=True))

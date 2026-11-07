@@ -1,0 +1,61 @@
+Tier,Concept FR,Concept EN,Concept ES,Type,Variante Émotion,Impact,Points Bonus,Nom Fichier
+EMO,Menace,Threatens,Amenaza,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_menace.svg
+EMO,Détruit,Destroys,Destruye,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_destroy.svg
+EMO,Efface,Wipes Out,Borra,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_wipeout.svg
+EMO,Ronge,Erodes,Erosiona,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_erodes.svg
+EMO,Dévore,Devours,Devora,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_devours.svg
+EMO,S'Effondre,Collapses,Se Derrumba,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_collapse.svg
+EMO,Plonge,Plunges,Se Desploma,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_plunge.svg
+EMO,Disparaît,Vanishes,Desaparece,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_vanish.svg
+EMO,Avant qu'il soit trop tard,Before It's Too Late,Antes de que Sea Tarde,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_urgent.svg
+EMO,Maintenant,Right Now,Ahora,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_now.svg
+EMO,La fenêtre se ferme,Window Is Closing,La Ventana se Cierra,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_window.svg
+EMO,Votre épargne,Your Savings,Tus Ahorros,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_savings.svg
+EMO,Votre retraite,Your Retirement,Tu Jubilación,Cartoon SVG,Peur (Fear),Très Haut,+20,emo_peur_retirement.svg
+EMO,Jamais Vu,Never Seen,Nunca Visto,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_never.svg
+EMO,Inédit,Unprecedented,Sin Precedentes,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_unprecedented.svg
+EMO,Sans Précédent,Historic,Histórico,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_historic.svg
+EMO,Pour la première fois,For the First Time,Por Primera Vez,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_firsttime.svg
+EMO,Personne n'y croyait,Nobody Expected,Nadie lo Esperaba,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_unexpected.svg
+EMO,Choc,Shocking,Impactante,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_shock.svg
+EMO,Stupéfiant,Staggering,Asombroso,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_staggering.svg
+EMO,Bouleverse tout,Game-Changer,Cambia Todo,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_gamechanger.svg
+EMO,Contre toute attente,Against All Odds,Contra Todo Pronóstico,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_odds.svg
+EMO,Retournement,Plot Twist,Giro Inesperado,Cartoon SVG,Surprise (Shock),Haut,+18,emo_surprise_twist.svg
+EMO,Pendant que vous...,While You...,Mientras Tú...,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_while.svg
+EMO,Les banques,The Banks,Los Bancos,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_banks.svg
+EMO,Ce qu'ils ne vous disent pas,Hidden Truth,Lo Que No Te Dicen,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_hidden.svg
+EMO,Scandale,Outrage,Escándalo,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_scandal.svg
+EMO,Inacceptable,Unacceptable,Inaceptable,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_unacceptable.svg
+EMO,Pendant que votre salaire stagne,While Your Wages Stagnate,Mientras tu Sueldo se Congela,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_wages.svg
+EMO,Profits records,Record Profits,Ganancias Récord,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_profits.svg
+EMO,Les élites,The Elites,Las Élites,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_elites.svg
+EMO,Deux poids deux mesures,Double Standard,Doble Rasero,Cartoon SVG,Colère (Anger),Modéré,+15,emo_anger_double.svg
+EMO,Ne ratez pas,Don't Miss,No te lo Pierdas,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_miss.svg
+EMO,À saisir maintenant,Act Now,Actúa Ahora,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_actnow.svg
+EMO,La fenêtre est ouverte,Window of Opportunity,La Ventana Está Abierta,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_window.svg
+EMO,Ceux qui agissent maintenant,Those Who Act Today,Quienes Actúan Hoy,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_acttoday.svg
+EMO,Avant la prochaine hausse,Before the Next Surge,Antes de la Próxima Subida,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_surge.svg
+EMO,L'occasion unique,Once-in-a-Lifetime,Oportunidad Única,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_unique.svg
+EMO,Pendant qu'il est encore temps,While There's Still Time,Mientras Aún hay Tiempo,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_stilltime.svg
+EMO,Ce que font les smart money,What Smart Money Is Doing,Lo Que Hace el Dinero Inteligente,Cartoon SVG,FOMO,Modéré,+12,emo_fomo_smartmoney.svg
+EMO,Incertitude,Uncertainty,Incertidumbre,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_uncertain.svg
+EMO,Inquiétant,Worrying,Preocupante,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_worry.svg
+EMO,Préoccupant,Concerning,Inquietante,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_concern.svg
+EMO,Instabilité,Instability,Inestabilidad,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_unstable.svg
+EMO,Tension,Tension,Tensión,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_tension.svg
+EMO,Turbulence,Turbulence,Turbulencia,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_turbulent.svg
+EMO,Risque,Risk,Riesgo,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_risk.svg
+EMO,Vulnérable,Vulnerable,Vulnerable,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_vulnerable.svg
+EMO,Fragile,Fragile,Frágil,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_fragile.svg
+EMO,Sous pression,Under Pressure,Bajo Presión,Cartoon SVG,Anxiété (Anxiety),Modéré,+8,emo_anxiety_pressure.svg
+EMO,Bonne nouvelle,Good News,Buena Noticia,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_good.svg
+EMO,Enfin,Finally,Por Fin,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_finally.svg
+EMO,Ça s'améliore,Improving,Mejorando,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_improving.svg
+EMO,Rebond,Rebound,Rebote,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_rebound.svg
+EMO,Reprise,Recovery,Recuperación,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_recovery.svg
+EMO,Stabilisation,Stabilization,Estabilización,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_stable.svg
+EMO,Protection,Protection,Protección,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_protect.svg
+EMO,Solution,Solution,Solución,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_solution.svg
+EMO,Voici quoi faire,Here's What to Do,Qué Hacer Ahora,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_howto.svg
+EMO,Comment s'en sortir,How to Protect Yourself,Cómo Protegerte,Cartoon SVG,Soulagement/Espoir (Relief),Modéré,+10,emo_relief_howprotect.svg
