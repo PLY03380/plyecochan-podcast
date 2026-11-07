@@ -29,17 +29,47 @@ def _get_config():
         return None
 
 
+def get_publora_accounts() -> List[Dict]:
+    """Recupere les comptes connectes sur Publora."""
+    cfg = _get_config()
+    api_key = getattr(cfg, "PUBLORA_API_KEY", "") if cfg else os.getenv("PUBLORA_API_KEY", "")
+    if not api_key:
+        return []
+    try:
+        import requests
+        resp = requests.get(
+            "https://api.publora.com/api/v1/platform-connections",
+            headers={"x-publora-key": api_key},
+            timeout=15,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        return data.get("connections", [])
+    except Exception as e:
+        log.error(f"Publora accounts echoue: {e}")
+        return []
+
+
 def post_publora(content: str, url: str = None, image_path: str = None,
                  platforms: List[str] = None) -> Optional[Dict]:
-    """Publie sur Publora (10 reseaux en un appel)."""
+    """Publie sur Publora (multi-reseaux en un appel).
+
+    platforms: liste de platform IDs (ex: ['twitter-123', 'facebook-456'])
+               Si None, utilise tous les comptes connectes.
+    """
     cfg = _get_config()
     api_key = getattr(cfg, "PUBLORA_API_KEY", "") if cfg else os.getenv("PUBLORA_API_KEY", "")
     if not api_key:
         log.warning("Publora: pas de cle (PUBLORA_API_KEY requise)")
         return None
 
+    # Si pas de platforms specifiees, utiliser tous les comptes connectes
     if platforms is None:
-        platforms = ["twitter", "instagram", "linkedin", "facebook", "tiktok", "pinterest"]
+        accounts = get_publora_accounts()
+        platforms = [a["platformId"] for a in accounts if a.get("connectionStatus") != "reconnect_required"]
+        if not platforms:
+            log.warning("Publora: aucun compte connecte")
+            return None
 
     try:
         import requests
@@ -52,17 +82,17 @@ def post_publora(content: str, url: str = None, image_path: str = None,
             payload["url"] = url
         if image_path and Path(image_path).exists():
             with open(image_path, "rb") as f:
-                payload["image"] = base64.b64encode(f.read()).decode()
+                payload["mediaUrls"] = [f"data:image/jpeg;base64,{base64.b64encode(f.read()).decode()}"]
 
         resp = requests.post(
-            "https://api.publora.com/v1/post",
+            "https://api.publora.com/api/v1/create-post",
             json=payload,
-            headers={"Authorization": f"Bearer {api_key}"},
+            headers={"Content-Type": "application/json", "x-publora-key": api_key},
             timeout=30,
         )
         resp.raise_for_status()
         data = resp.json()
-        log.info(f"Publora: publie sur {len(platforms)} reseaux")
+        log.info(f"Publora: publie sur {len(platforms)} reseaux: {platforms}")
         return data
     except Exception as e:
         log.error(f"Publora echoue: {e}")

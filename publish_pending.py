@@ -252,7 +252,7 @@ def publish_pending(date_str: str = None):
                     "url_youtube": f"https://youtube.com/watch?v={video_ids.get(lang, '')}",
                     "hashtags": ["economie", "finance", "actualite"],
                 }
-                distribuer_video_tous_reseaux(video_data)
+                distribuer_video_tous_reseaux(video_data, use_publora=True)
                 log.info(f"Distribution multi-reseaux {lang}: OK")
     except Exception as e:
         log.warning(f"Distribution multi-reseaux echouee: {e}")
