@@ -48,8 +48,13 @@ def _save_tracker(data: dict):
     PROMO_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def search_youtube_videos(query: str, max_results: int = 10) -> List[Dict]:
-    """Recherche des videos YouTube dans la niche economique."""
+def search_youtube_videos(query: str, max_results: int = 10,
+                         min_views: int = 1000, max_views: int = 50000) -> List[Dict]:
+    """Recherche des videos YouTube dans la niche economique.
+
+    Filtre les videos par nombre de vues (min_views a max_views) pour cibler
+    les videos avec assez de trafic mais pas trop de concurrence.
+    """
     cfg = _load_config()
     try:
         from googleapiclient.discovery import build
@@ -58,19 +63,59 @@ def search_youtube_videos(query: str, max_results: int = 10) -> List[Dict]:
             part="snippet",
             q=query,
             type="video",
-            maxResults=max_results,
+            maxResults=max_results * 2,  # Chercher plus pour compenser le filtrage
             order="date",
             relevanceLanguage="fr",
         ).execute()
+
+        # Recuperer les video_ids pour obtenir les stats
+        video_ids = [item["id"]["videoId"] for item in resp.get("items", [])]
+        if not video_ids:
+            return []
+
+        # Obtenir les statistiques (vues) pour filtrer
+        stats_resp = yt.videos().list(
+            part="statistics,snippet",
+            id=",".join(video_ids),
+        ).execute()
+
+        stats_map = {}
+        for item in stats_resp.get("items", []):
+            stats_map[item["id"]] = {
+                "views": int(item["statistics"].get("viewCount", 0)),
+                "likes": int(item["statistics"].get("likeCount", 0)),
+                "comments": int(item["statistics"].get("commentCount", 0)),
+            }
+
         results = []
         for item in resp.get("items", []):
+            vid = item["id"]["videoId"]
+            stats = stats_map.get(vid, {})
+            views = stats.get("views", 0)
+
+            # Filtrer par nombre de vues
+            if views < min_views or views > max_views:
+                continue
+
+            # Exclure nos propres videos
+            channel = item["snippet"]["channelTitle"]
+            if "plychan" in channel.lower():
+                continue
+
             results.append({
-                "video_id": item["id"]["videoId"],
+                "video_id": vid,
                 "title": item["snippet"]["title"],
-                "channel": item["snippet"]["channelTitle"],
+                "channel": channel,
                 "description": item["snippet"]["description"][:200],
-                "url": f"https://youtube.com/watch?v={item['id']['videoId']}",
+                "url": f"https://youtube.com/watch?v={vid}",
+                "views": views,
+                "likes": stats.get("likes", 0),
+                "comments": stats.get("comments", 0),
             })
+
+            if len(results) >= max_results:
+                break
+
         return results
     except Exception as e:
         log.error(f"Recherche YouTube echouee: {e}")
@@ -561,7 +606,7 @@ if __name__ == "__main__":
         results = search_youtube_videos("économie actualité", max_results=5)
         for r in results:
             safe_title = r['title'][:60].encode('ascii', 'replace').decode()
-            print(f"  {safe_title} - {r['channel']}")
+            print(f"  {safe_title} - {r['channel']} | Views: {r.get('views', '?')}")
     elif args.comment:
         # Commenter sur les videos trouvees
         results = search_youtube_videos("économie actualité", max_results=3)
