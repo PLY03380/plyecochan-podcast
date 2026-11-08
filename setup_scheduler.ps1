@@ -35,4 +35,3 @@ Write-Host "  - PlyChanPromo : 9h, 13h, 18h (promotion)"
 Write-Host "  - PlyChanSync : 12h00 (upload manquants)"
 Write-Host ""
 Write-Host "Pour verifier: Get-ScheduledTask | Where-Object { \$_.TaskName -like 'PlyChan*' }"
-PYEOF
