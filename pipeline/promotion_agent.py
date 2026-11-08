@@ -209,6 +209,33 @@ def reply_to_comments() -> int:
     return replied
 
 
+def subscribe_to_channel(channel_id: str) -> Optional[str]:
+    """S'abonne a une chaine YouTube (reciprocite)."""
+    try:
+        from pipeline.upload import get_authenticated_service
+        yt = get_authenticated_service()
+        resp = yt.subscriptions().insert(
+            part="snippet",
+            body={
+                "snippet": {
+                    "resourceId": {
+                        "kind": "youtube#channel",
+                        "channelId": channel_id,
+                    }
+                }
+            }
+        ).execute()
+        sub_id = resp.get("id")
+        log.info("Abonnement a la chaine " + channel_id + ": " + str(sub_id))
+        return sub_id
+    except Exception as e:
+        if "duplicate" in str(e).lower() or "already" in str(e).lower():
+            log.info("Deja abonne a " + channel_id)
+            return "already"
+        log.warning("Abonnement echoue (" + channel_id + "): " + str(e))
+        return None
+
+
 def _generate_reply(comment: str, lang: str = "fr") -> str:
     """Genere une reponse a un commentaire."""
     templates = {
@@ -517,12 +544,25 @@ def run_promotion():
 
     # 2. Poster des commentaires sur les videos pertinentes (max 10 par run)
     commented_ids = {c["video_id"] for c in tracker.get("youtube_comments", [])}
+    subscribed_channels = {s.get("channel_id") for s in tracker.get("youtube_subscriptions", [])}
     comments_posted = 0
+    subscriptions_posted = 0
     for video in external_videos[:10]:
         if video["video_id"] in commented_ids:
             continue
         if comments_posted >= 10:
             break
+
+        channel_id = None
+        try:
+            from googleapiclient.discovery import build
+            yt = build("youtube", "v3", developerKey=cfg.YOUTUBE_API_KEY)
+            vid_resp = yt.videos().list(part="snippet", id=video["video_id"]).execute()
+            if vid_resp.get("items"):
+                channel_id = vid_resp["items"][0]["snippet"]["channelId"]
+        except Exception:
+            pass
+
         comment = generate_promo_comment(
             video["title"], "https://youtube.com/@PlyChan", "fr"
         )
@@ -535,6 +575,21 @@ def run_promotion():
                 "date": today,
             })
             comments_posted += 1
+
+            # S'abonner a la chaine (reciprocite)
+            if channel_id and channel_id not in subscribed_channels:
+                sub_id = subscribe_to_channel(channel_id)
+                if sub_id:
+                    if "youtube_subscriptions" not in tracker:
+                        tracker["youtube_subscriptions"] = []
+                    tracker["youtube_subscriptions"].append({
+                        "channel_id": channel_id,
+                        "video_title": video["title"],
+                        "date": today,
+                    })
+                    subscribed_channels.add(channel_id)
+                    subscriptions_posted += 1
+
             time.sleep(2)  # rate limit
 
     # 3. Rechercher des posts Reddit pertinents
@@ -583,12 +638,14 @@ def run_promotion():
     _save_tracker(tracker)
     log.info("=== PROMOTION TERMINEE ===")
     log.info(f"Commentaires YouTube: {comments_posted}")
+    log.info(f"Abonnements: {subscriptions_posted}")
     log.info(f"Reponses: {replied}")
     log.info(f"Posts Reddit trouves: {len(reddit_results)}")
     log.info(f"Tweets trouves: {len(twitter_results)}")
 
     return {
         "youtube_comments": comments_posted,
+        "youtube_subscriptions": subscriptions_posted,
         "reddit_found": len(reddit_results),
         "twitter_found": len(twitter_results),
         "facebook_posted": len([p for p in tracker.get("facebook_posts", []) if p.get("date") == today]),
