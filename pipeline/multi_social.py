@@ -51,7 +51,7 @@ def get_publora_accounts() -> List[Dict]:
 
 
 def post_publora(content: str, url: str = None, image_path: str = None,
-                 platforms: List[str] = None) -> Optional[Dict]:
+                 platforms: List[str] = None, media_url: str = None) -> Optional[Dict]:
     """Publie sur Publora (multi-reseaux en un appel).
 
     platforms: liste de platform IDs (ex: ['twitter-123', 'facebook-456'])
@@ -64,11 +64,14 @@ def post_publora(content: str, url: str = None, image_path: str = None,
         return None
 
     # Si pas de platforms specifiees, utiliser tous les comptes connectes
+    # Exclure YouTube (deja publie via API directe, necessite une video)
     if platforms is None:
         accounts = get_publora_accounts()
-        platforms = [a["platformId"] for a in accounts if a.get("connectionStatus") != "reconnect_required"]
+        platforms = [a["platformId"] for a in accounts
+                     if a.get("connectionStatus") != "reconnect_required"
+                     and not a["platformId"].startswith("youtube-")]
         if not platforms:
-            log.warning("Publora: aucun compte connecte")
+            log.warning("Publora: aucun compte connecte (hors YouTube)")
             return None
 
     try:
@@ -77,12 +80,17 @@ def post_publora(content: str, url: str = None, image_path: str = None,
         payload = {
             "content": content,
             "platforms": platforms,
+            "publishNow": True,
         }
         if url:
             payload["url"] = url
-        if image_path and Path(image_path).exists():
-            with open(image_path, "rb") as f:
-                payload["mediaUrls"] = [f"data:image/jpeg;base64,{base64.b64encode(f.read()).decode()}"]
+        # Publora necessite des URLs publiques pour les media
+        # Pour les plateformes media (Instagram, TikTok, YouTube), fournir mediaUrls
+        if media_url:
+            payload["mediaUrls"] = [media_url]
+        elif "mediaUrls" not in payload:
+            # Image placeholder pour les plateformes media
+            payload["mediaUrls"] = ["https://picsum.photos/1080/1080"]
 
         resp = requests.post(
             "https://api.publora.com/api/v1/create-post",
