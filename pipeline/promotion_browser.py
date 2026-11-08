@@ -203,6 +203,117 @@ def medium_promote(title: str, content: str, tags: List[str] = None) -> Optional
         return None
 
 
+# Sites economiques cibles pour la promotion (avec commentaires)
+ECONOMIC_SITES = {
+    "fr": [
+        {"name": "Andlil Forum", "url": "https://www.andlil.com/forum/", "type": "forum"},
+        {"name": "MoneyRadar", "url": "https://moneyradar.org/", "type": "blog"},
+        {"name": "Boursorama", "url": "https://www.boursorama.com/", "type": "forum"},
+        {"name": "Les Echos", "url": "https://www.lesechos.fr/", "type": "news"},
+    ],
+    "en": [
+        {"name": "Marginal Revolution", "url": "https://marginalrevolution.com/", "type": "blog"},
+        {"name": "Reddit r/economy", "url": "https://www.reddit.com/r/economy/", "type": "forum"},
+        {"name": "Reddit r/finance", "url": "https://www.reddit.com/r/finance/", "type": "forum"},
+        {"name": "Reddit r/investing", "url": "https://www.reddit.com/r/investing/", "type": "forum"},
+        {"name": "Hacker News", "url": "https://news.ycombinator.com/", "type": "forum"},
+    ],
+    "es": [
+        {"name": "Rankia", "url": "https://www.rankia.com/", "type": "forum"},
+        {"name": "El Economista", "url": "https://www.eleconomista.es/", "type": "news"},
+        {"name": "Expansion", "url": "https://www.expansion.com/", "type": "news"},
+        {"name": "Invertia", "url": "https://www.invertia.com/", "type": "news"},
+    ],
+}
+
+
+def promote_on_sites(lang: str = "fr", video_url: str = "https://youtube.com/@PlyChan",
+                     comment_text: str = None) -> int:
+    """Promouvoir sur les sites economiques cibles via Playwright."""
+    if comment_text is None:
+        comment_text = (
+            "Excellent sujet ! J'ai aussi fait une video sur ce theme : " + video_url +
+            " — n'hesitez pas a y jeter un oeil. Abonnez-vous pour plus d'analyses !"
+        )
+
+    sites = ECONOMIC_SITES.get(lang, ECONOMIC_SITES["en"])
+    posted = 0
+
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        log.error("Playwright non installe. pip install playwright && playwright install")
+        return 0
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
+        context = browser.new_context()
+        page = context.new_page()
+
+        for site in sites:
+            try:
+                log.info(f"Visite: {site['name']} ({site['url']})")
+                page.goto(site["url"], timeout=30000)
+                time.sleep(3)
+
+                # Chercher un champ de commentaire
+                comment_selectors = [
+                    "textarea[name='comment']",
+                    "textarea[placeholder*='comment']",
+                    "div[contenteditable='true']",
+                    "textarea.comment-form",
+                    "#comment",
+                    ".comment-box textarea",
+                ]
+
+                comment_box = None
+                for sel in comment_selectors:
+                    try:
+                        comment_box = page.query_selector(sel)
+                        if comment_box:
+                            break
+                    except Exception:
+                        pass
+
+                if comment_box:
+                    comment_box.click()
+                    time.sleep(1)
+                    page.keyboard.type(comment_text, delay=30)
+                    time.sleep(2)
+
+                    # Chercher le bouton de soumission
+                    submit_selectors = [
+                        "button:has-text('Comment')",
+                        "button:has-text('Publier')",
+                        "button:has-text('Envoyer')",
+                        "button[type='submit']",
+                        "input[type='submit']",
+                    ]
+                    for sel in submit_selectors:
+                        try:
+                            submit = page.query_selector(sel)
+                            if submit:
+                                submit.click()
+                                time.sleep(3)
+                                posted += 1
+                                log.info(f"  Commentaire poste sur {site['name']}")
+                                break
+                        except Exception:
+                            pass
+                else:
+                    log.info(f"  Pas de champ de commentaire sur {site['name']}")
+
+            except Exception as e:
+                log.warning(f"  {site['name']}: {e}")
+
+            time.sleep(5)  # Rate limit entre les sites
+
+        browser.close()
+
+    log.info(f"Sites economiques: {posted} commentaires postes")
+    return posted
+
+
 def run_all(video_url: str = "https://youtube.com/@PlyChan", comment_text: str = None):
     """Execute la promotion sur toutes les plateformes."""
     if comment_text is None:
@@ -225,6 +336,11 @@ def run_all(video_url: str = "https://youtube.com/@PlyChan", comment_text: str =
     tweet = f"Nouvelle analyse economique sur PlyChan ! {video_url} #economie #finance #investing"
     twitter_ok = twitter_promote(tweet)
     log.info(f"Twitter: {'OK' if twitter_ok else 'ECHEC'}")
+
+    # Sites economiques (FR, EN, ES)
+    for lang in ["fr", "en", "es"]:
+        sites_posted = promote_on_sites(lang, video_url, comment_text)
+        log.info(f"Sites {lang}: {sites_posted} commentaires")
 
     tracker["last_run"] = today
     _save_tracker(tracker)
