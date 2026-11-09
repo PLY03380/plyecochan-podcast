@@ -280,6 +280,7 @@ if __name__ == "__main__":
     parser.add_argument("--reject", type=str, help="Rejette une action (ID)")
     parser.add_argument("--publish", action="store_true", help="Publie les actions approuvees")
     parser.add_argument("--auto", action="store_true", help="Mode auto (prepare + affiche)")
+    parser.add_argument("--auto-publish", action="store_true", help="Mode auto (prepare + approuve + publie sans validation)")
     args = parser.parse_args()
 
     if args.prepare or args.auto:
@@ -288,6 +289,11 @@ if __name__ == "__main__":
         review_queue()
         if args.auto:
             print("\nPour publier: python pipeline/facebook_engagement.py --publish")
+    elif args.auto_publish:
+        prepare_facebook_posts()
+        approve_all()
+        published = publish_approved()
+        print(f"\n{published} posts publies automatiquement")
     elif args.review:
         review_queue()
     elif args.approve:
