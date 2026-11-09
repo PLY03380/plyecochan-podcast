@@ -207,35 +207,42 @@ def publish_pending(date_str: str = None):
             pass
 
     if fb_token:
-        from pipeline.facebook_poster import safe_publish_facebook
-        fb_posts = published[date_str].get("facebook", {})
-        blogger_urls = published[date_str].get("blogger", {})
-
-        for lang in ("fr", "en", "es"):
-            if lang in fb_posts:
-                log.info(f"Facebook {lang}: deja publie")
-                continue
-
-            titre = script.get(lang, {}).get("titre", "")
-            blogger_url = blogger_urls.get(lang)
-            if not titre or not blogger_url:
-                continue
-
+        # Utiliser facebook_engagement en mode auto-publish (sans moderation)
+        try:
+            from pipeline.facebook_engagement import prepare_facebook_posts, approve_all, publish_approved
+            # Preparer les posts (genere des posts riches avec titres et liens)
+            prepare_facebook_posts()
+            approve_all()
+            fb_count = publish_approved()
+            log.info(f"Facebook engagement: {fb_count} posts publies (auto)")
+        except Exception as e:
+            log.warning(f"Facebook engagement echoue: {e}")
+            # Fallback: utiliser facebook_poster direct
             try:
-                post_id = safe_publish_facebook(
-                    titre, blogger_url,
-                    resume=script.get(lang, {}).get("blocs", {}).get(
-                        {"fr": "fait", "en": "fact", "es": "hecho"}[lang], ""),
-                )
-                if post_id:
-                    log.info(f"Post Facebook {lang} cree: {post_id}")
-                    fb_posts[lang] = post_id
-                    published[date_str]["facebook"] = fb_posts
-                    save_published(published)
-            except Exception as e:
-                log.warning(f"Publication Facebook {lang} echouee: {e}")
+                from pipeline.facebook_poster import safe_publish_facebook
+                fb_posts = published[date_str].get("facebook", {})
+                blogger_urls = published[date_str].get("blogger", {})
+                for lang in ("fr", "en", "es"):
+                    if lang in fb_posts:
+                        continue
+                    titre = script.get(lang, {}).get("titre", "")
+                    blogger_url = blogger_urls.get(lang)
+                    if not titre or not blogger_url:
+                        continue
+                    post_id = safe_publish_facebook(
+                        titre, blogger_url,
+                        resume=script.get(lang, {}).get("blocs", {}).get(
+                            {"fr": "fait", "en": "fact", "es": "hecho"}[lang], ""),
+                    )
+                    if post_id:
+                        log.info(f"Post Facebook {lang} cree: {post_id}")
+                        fb_posts[lang] = post_id
+                        published[date_str]["facebook"] = fb_posts
+                        save_published(published)
+            except Exception as e2:
+                log.warning(f"Facebook fallback echoue: {e2}")
 
-        if fb_posts:
+        if fb_posts if 'fb_posts' in dir() else {}:
             published[date_str]["facebook"] = fb_posts
             save_published(published)
     else:
