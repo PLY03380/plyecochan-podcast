@@ -27,7 +27,8 @@ bot.lock
 video/
 output/
 *.mp4
-*.mp3
+# Allow MP3 in docs/ for GitHub Pages podcast
+!docs/**/*.mp3
 
 # IDE
 .vscode/

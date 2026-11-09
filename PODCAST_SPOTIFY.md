@@ -6,7 +6,7 @@ Les fichiers MP3 sont dans `output/podcast/` :
 - `YYYY-MM-DD_long_en.mp3` (audio anglais)
 - `YYYY-MM-DD_long_es.mp3` (audio espagnol)
 
-## Option 1 : RSS.com (Recommande - Distribution automatique)
+## Option 1 : RSS.com (Recommande - Distribution automatique) ✅ GRATUIT
 
 ### Configuration initiale (1 fois)
 1. Creer un compte sur https://rss.com (gratuit)

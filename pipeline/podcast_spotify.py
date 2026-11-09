@@ -50,23 +50,54 @@ def save_spotify_session():
 
         print("\n" + "=" * 60)
         print("CONNECTE-TOI A SPOTIFY DANS LE NAVIGATEUR")
-        print("Une fois connecte, appuie sur Entree ici")
+        print("Tu as 300 secondes pour te connecter")
+        print("La session sera sauvegardee automatiquement")
         print("=" * 60)
-        input("Appuie sur Entree apres connexion...")
 
-        # Sauvegarder la session
+        # Attendre que l'utilisateur se connecte (max 300s)
+        # Ne pas auto-detecter - attendre que l'utilisateur appuie sur Entree
+        # Comme input() ne fonctionne pas en non-interactif, on attend 300s
+        print("\n" + "=" * 60)
+        print("LE NAVIGATEUR EST OUVERT")
+        print("1. Connecte-toi a Spotify dans le navigateur")
+        print("2. Attends que le dashboard charge completement")
+        print("3. La session sera sauvegardee automatiquement apres 30s")
+        print("   OU appuie sur Ctrl+C pour sauvegarder maintenant")
+        print("=" * 60)
+
+        logged_in = False
+        for i in range(300):
+            time.sleep(1)
+            try:
+                current_url = page.url
+                # Detection plus stricte: URL du dashboard sans login
+                if "creators.spotify.com" in current_url and "login" not in current_url and "accounts." not in current_url and "signin" not in current_url:
+                    # Verifier qu'on est vraiment sur le dashboard
+                    if "home" in current_url or "show" in current_url or "podcast" in current_url or "episode" in current_url:
+                        if not logged_in:
+                            logged_in = True
+                            log.info("Connexion detectee ! Attente de 10s pour stabilisation...")
+                            time.sleep(10)
+                            context.storage_state(path=str(SESSION_FILE))
+                            log.info(f"Session sauvegardee: {SESSION_FILE}")
+                            browser.close()
+                            return True
+            except Exception:
+                pass
+
+        # Timeout - sauvegarder quand meme
+        log.warning("Timeout 300s atteint. Sauvegarde de la session actuelle...")
         context.storage_state(path=str(SESSION_FILE))
-        log.info(f"Session sauvegardee: {SESSION_FILE}")
         browser.close()
         return True
 
 
 def upload_episode(audio_path: str, title: str, description: str) -> bool:
-    """Upload un episode sur Spotify for Creators via Playwright."""
-    if not SESSION_FILE.exists():
-        log.error("Session Spotify non trouvee. Lance --save-session d'abord.")
-        return False
+    """Upload un episode sur Spotify for Creators via Playwright.
 
+    Ouvre un navigateur visible pour que l'utilisateur puisse se connecter.
+    L'upload se fait dans la meme session (pas de session sauvegardee).
+    """
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -74,12 +105,34 @@ def upload_episode(audio_path: str, title: str, description: str) -> bool:
         return False
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(storage_state=str(SESSION_FILE))
+        browser = p.chromium.launch(headless=False)
+        context = browser.new_context()
         page = context.new_page()
 
         try:
-            # Aller sur la page d'upload
+            # Aller sur Spotify for Creators
+            page.goto("https://creators.spotify.com", timeout=30000)
+            time.sleep(3)
+
+            print("\n" + "=" * 60)
+            print("CONNECTE-TOI A SPOTIFY DANS LE NAVIGATEUR")
+            print("Une fois connecte, l'upload se lancera automatiquement")
+            print("=" * 60)
+
+            # Attendre que l'utilisateur se connecte
+            for i in range(300):
+                time.sleep(1)
+                try:
+                    current_url = page.url
+                    if "creators.spotify.com" in current_url and "login" not in current_url and "accounts." not in current_url and "signin" not in current_url:
+                        if "home" in current_url or "show" in current_url or "podcast" in current_url or "episode" in current_url or "dashboard" in current_url:
+                            log.info("Connexion detectee !")
+                            time.sleep(5)
+                            break
+                except Exception:
+                    pass
+
+            # Naviguer vers la page d'upload
             if SPOTIFY_SHOW_ID:
                 page.goto(f"https://creators.spotify.com/pod/show/{SPOTIFY_SHOW_ID}/home", timeout=30000)
             else:
@@ -87,7 +140,7 @@ def upload_episode(audio_path: str, title: str, description: str) -> bool:
             time.sleep(5)
 
             # Cliquer sur "New Episode" ou "Upload"
-            new_episode_btn = page.query_selector("button:has-text('New episode'), a:has-text('New episode'), button:has-text('Upload')")
+            new_episode_btn = page.query_selector("button:has-text('New episode'), a:has-text('New episode'), button:has-text('Upload'), button:has-text('Nouvel épisode'), a:has-text('Nouvel épisode')")
             if new_episode_btn:
                 new_episode_btn.click()
                 time.sleep(3)
@@ -96,17 +149,17 @@ def upload_episode(audio_path: str, title: str, description: str) -> bool:
             file_input = page.query_selector("input[type='file']")
             if file_input:
                 file_input.set_input_files(audio_path)
-                time.sleep(5)
+                time.sleep(10)
                 log.info(f"Audio uploade: {Path(audio_path).name}")
 
             # Remplir le titre
-            title_input = page.query_selector("input[name='title'], input[placeholder*='title'], input[placeholder*='Title']")
+            title_input = page.query_selector("input[name='title'], input[placeholder*='title'], input[placeholder*='Title'], input[placeholder*='titre'], input[placeholder*='Titre']")
             if title_input:
                 title_input.fill(title)
                 time.sleep(1)
 
             # Remplir la description
-            desc_input = page.query_selector("textarea[name='description'], div[contenteditable='true']")
+            desc_input = page.query_selector("textarea[name='description'], div[contenteditable='true'], textarea[placeholder*='description'], textarea[placeholder*='Description']")
             if desc_input:
                 desc_input.click()
                 time.sleep(0.5)
@@ -114,7 +167,7 @@ def upload_episode(audio_path: str, title: str, description: str) -> bool:
                 time.sleep(1)
 
             # Publier
-            publish_btn = page.query_selector("button:has-text('Publish'), button:has-text('Save')")
+            publish_btn = page.query_selector("button:has-text('Publish'), button:has-text('Save'), button:has-text('Publier'), button:has-text('Enregistrer')")
             if publish_btn:
                 publish_btn.click()
                 time.sleep(5)
@@ -123,6 +176,10 @@ def upload_episode(audio_path: str, title: str, description: str) -> bool:
                 return True
             else:
                 log.warning("Bouton Publish non trouve")
+                # Prendre un screenshot pour debug
+                page.screenshot(path=str(ROOT / "output" / "spotify_debug.png"))
+                log.info("Screenshot sauvegarde: output/spotify_debug.png")
+                time.sleep(10)
                 browser.close()
                 return False
 
