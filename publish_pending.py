@@ -207,28 +207,34 @@ def publish_pending(date_str: str = None):
             pass
 
     if fb_token:
-        # Utiliser facebook_engagement en mode auto-publish (sans moderation)
+        fb_posts = published[date_str].get("facebook", {})
+        blogger_urls = published[date_str].get("blogger", {})
+
+        # Essayer facebook_engagement d'abord
         try:
             from pipeline.facebook_engagement import prepare_facebook_posts, approve_all, publish_approved
-            # Preparer les posts (genere des posts riches avec titres et liens)
             prepare_facebook_posts()
             approve_all()
             fb_count = publish_approved()
             log.info(f"Facebook engagement: {fb_count} posts publies (auto)")
+            # Mettre a jour published.json
+            for lang in ("fr", "en", "es"):
+                if lang not in fb_posts:
+                    fb_posts[lang] = "engagement_auto"
+            published[date_str]["facebook"] = fb_posts
+            save_published(published)
         except Exception as e:
             log.warning(f"Facebook engagement echoue: {e}")
             # Fallback: utiliser facebook_poster direct
-            try:
-                from pipeline.facebook_poster import safe_publish_facebook
-                fb_posts = published[date_str].get("facebook", {})
-                blogger_urls = published[date_str].get("blogger", {})
-                for lang in ("fr", "en", "es"):
-                    if lang in fb_posts:
-                        continue
-                    titre = script.get(lang, {}).get("titre", "")
-                    blogger_url = blogger_urls.get(lang)
-                    if not titre or not blogger_url:
-                        continue
+            for lang in ("fr", "en", "es"):
+                if lang in fb_posts:
+                    continue
+                titre = script.get(lang, {}).get("titre", "")
+                blogger_url = blogger_urls.get(lang)
+                if not titre or not blogger_url:
+                    continue
+                try:
+                    from pipeline.facebook_poster import safe_publish_facebook
                     post_id = safe_publish_facebook(
                         titre, blogger_url,
                         resume=script.get(lang, {}).get("blocs", {}).get(
@@ -239,10 +245,10 @@ def publish_pending(date_str: str = None):
                         fb_posts[lang] = post_id
                         published[date_str]["facebook"] = fb_posts
                         save_published(published)
-            except Exception as e2:
-                log.warning(f"Facebook fallback echoue: {e2}")
+                except Exception as e2:
+                    log.warning(f"Facebook fallback echoue ({lang}): {e2}")
 
-        if fb_posts if 'fb_posts' in dir() else {}:
+        if fb_posts:
             published[date_str]["facebook"] = fb_posts
             save_published(published)
     else:
