@@ -15,6 +15,33 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s %(message
 log = logging.getLogger("bot")
 
 LOCK_FILE = Path("bot.lock")
+MANIFEST_FILE = Path(__file__).resolve().parent / "images" / "manifest.json"
+
+
+def _verifier_manifest() -> None:
+    """Garde amonte : sans images/manifest.json, l'etape visuels plante immanquablement.
+
+    (C'est exactement ce qui a fait echouer le run du 10/11/2026 a 06:00 :
+     fichier supprime lors d'un nettoyage git -> RuntimeError
+     "Aucune image disponible pour le bloc accroche" -> exit code 1.)
+    """
+    if not MANIFEST_FILE.exists():
+        raise RuntimeError(
+            f"{MANIFEST_FILE} introuvable : la bibliotheque d'images est incomplete. "
+            "Restaurez-le depuis 'D:\\Cahine youtube economique - Copie\\images\\manifest.json' "
+            "ou regenerez-le avec build_image_library.py, puis relancez le bot."
+        )
+    try:
+        concepts = json.loads(MANIFEST_FILE.read_text(encoding="utf-8")).get("concepts", {})
+    except Exception as e:
+        raise RuntimeError(
+            f"{MANIFEST_FILE} illisible ({e}) : regenerez-le avec build_image_library.py."
+        )
+    if not concepts:
+        raise RuntimeError(
+            f"{MANIFEST_FILE} vide (0 concept) : regenerez-le avec build_image_library.py."
+        )
+    log.info("Manifest images OK: %d concepts", len(concepts))
 
 
 def run_daily(theme: str = None) -> dict:
@@ -34,6 +61,7 @@ def run_daily(theme: str = None) -> dict:
         except Exception as e:
             log.warning("organiser_presets a echoue: %s", e)
         log.info("=== DÉBUT PIPELINE — thème: %s ===", theme)
+        _verifier_manifest()
 
         # 1. Veille + sélection
         from pipeline.veille import fetch_all_rss
@@ -189,6 +217,7 @@ if __name__ == "__main__":
         from pipeline.montage import generer_montage
         import config
 
+        _verifier_manifest()
         fait = {
             "titre": "Analyse economique approfondie",
             "chiffre_cle": "3.5%",

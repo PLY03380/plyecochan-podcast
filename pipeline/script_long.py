@@ -127,7 +127,22 @@ MODELS = [
 
 
 def _call_llm(prompt: str, max_tokens: int = 500) -> str:
-    """Appelle OpenRouter avec retry et rotation des clés."""
+    """Appelle le LLM multi-provider (pipeline/llm.py) puis OpenRouter en dernier recours.
+
+    pipeline/llm.py gere la rotation Ollama local -> Groq -> Gemini -> OpenRouter,
+    ce qui evite de dependre des seules cles OpenRouter (souvent epuisees, 402).
+    """
+    try:
+        from pipeline.llm import call_llm
+    except Exception:
+        from llm import call_llm
+
+    content = call_llm(prompt, max_tokens=max_tokens)
+    if content:
+        return content
+
+    # Dernier recours : OpenRouter direct (ancien comportement)
+    log.warning("call_llm global echoue, tentative OpenRouter directe")
     for model in MODELS:
         for key in config.OPENROUTER_KEYS:
             client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key)
@@ -181,7 +196,7 @@ Sujet: {fait['titre']}
 Chiffre cle: {fait['chiffre_cle']}
 Date: {cfg['date']}
 Reponds avec le titre uniquement (max 100 caracteres, avec #shorts)."""
-        titre = _call_llm(titre_prompt, max_tokens=60)
+        titre = _call_llm(titre_prompt, max_tokens=600)
         if not titre:
             titre = f"{fait['titre']} — Analyse {date_fmt['court']} #shorts"
 
@@ -206,7 +221,10 @@ Angle: {t['angle']}
 
 Ecris 150-200 mots en {cfg['langue']}. Sois detaille et pedagogique. Pas de markdown, pas de JSON, juste le texte."""
 
-            text = _call_llm(prompt, max_tokens=400)
+            # 2500 : Gemini inclut ses tokens de "thinking" dans max_tokens,
+            # 700 tronquait le bloc a 12 mots. Le plafond local Ollama (1500)
+            # evite en parallele de faire tourner le CPU sans fin.
+            text = _call_llm(prompt, max_tokens=2500)
             if text:
                 blocs[lang_key] = text
                 log.info("Bloc %s/%s genere (%d mots)", lang, lang_key, len(text.split()))

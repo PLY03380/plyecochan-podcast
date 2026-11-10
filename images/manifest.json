@@ -1,0 +1,1987 @@
+{
+  "generated_at": "2026-10-15T08:37:10.560577",
+  "version": "1.0",
+  "style": {
+    "bg": "#0B1D3A",
+    "gold": "#FFD700",
+    "gold_dark": "#B8860B",
+    "white": "#FFFFFF",
+    "gray": "#888888",
+    "red": "#E74C3C",
+    "green": "#2ECC71",
+    "blue": "#3498DB"
+  },
+  "concepts": {
+    "t1_record": {
+      "path": "images\\tier1\\t1_record.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Record",
+      "concept_en": "All-time High",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_alltimelow": {
+      "path": "images\\tier1\\t1_alltimelow.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "All-time Low",
+      "concept_en": "All-time Low",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_firsttime": {
+      "path": "images\\tier1\\t1_firsttime.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Jamais Vu",
+      "concept_en": "First Time",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_unprecedented": {
+      "path": "images\\tier1\\t1_unprecedented.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Sans Précédent",
+      "concept_en": "Unprecedented",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_historic_peak": {
+      "path": "images\\tier1\\t1_historic_peak.svg",
+      "tier": "tier1",
+      "type": "Cartoon SVG",
+      "concept_fr": "Sommet Historique",
+      "concept_en": "Historic Peak",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_lowest": {
+      "path": "images\\tier1\\t1_lowest.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Plus Bas",
+      "concept_en": "Lowest Point",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_crash": {
+      "path": "images\\tier1\\t1_crash.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Crash",
+      "concept_en": "Crash",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_krach": {
+      "path": "images\\tier1\\t1_krach.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Krach",
+      "concept_en": "Krach",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_collapse": {
+      "path": "images\\tier1\\t1_collapse.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Effondrement",
+      "concept_en": "Collapse",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_recession": {
+      "path": "images\\tier1\\t1_recession.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Recession",
+      "concept_en": "Recession",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_recession_fr": {
+      "path": "images\\tier1\\t1_recession_fr.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Récession",
+      "concept_en": "Recession (FR)",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_crisis": {
+      "path": "images\\tier1\\t1_crisis.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Crise",
+      "concept_en": "Crisis",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_stagflation": {
+      "path": "images\\tier1\\t1_stagflation.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Stagflation",
+      "concept_en": "Stagflation",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_hyperinflation": {
+      "path": "images\\tier1\\t1_hyperinflation.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Hyperinflation",
+      "concept_en": "Hyperinflation",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_bankruptcy": {
+      "path": "images\\tier1\\t1_bankruptcy.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Faillite",
+      "concept_en": "Bankruptcy",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_bankrupt": {
+      "path": "images\\tier1\\t1_bankrupt.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Bankrupt",
+      "concept_en": "Bankrupt",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_default": {
+      "path": "images\\tier1\\t1_default.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Défaut",
+      "concept_en": "Default",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_bankrun": {
+      "path": "images\\tier1\\t1_bankrun.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Bank Run",
+      "concept_en": "Bank Run",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_debtcrisis": {
+      "path": "images\\tier1\\t1_debtcrisis.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Crise de la Dette",
+      "concept_en": "Debt Crisis",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_supplyshock": {
+      "path": "images\\tier1\\t1_supplyshock.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Choc d'Offre",
+      "concept_en": "Supply Shock",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_ratecut": {
+      "path": "images\\tier1\\t1_ratecut.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Baisse de Taux",
+      "concept_en": "Rate Cut",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_ratehike": {
+      "path": "images\\tier1\\t1_ratehike.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Hausse de Taux",
+      "concept_en": "Rate Hike",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_pivot": {
+      "path": "images\\tier1\\t1_pivot.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Pivot",
+      "concept_en": "Fed Pivot",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_fedpivot": {
+      "path": "images\\tier1\\t1_fedpivot.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Fed Pivot",
+      "concept_en": "Fed Pivot (EN)",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_qe": {
+      "path": "images\\tier1\\t1_qe.svg",
+      "tier": "tier1",
+      "type": "Cartoon SVG",
+      "concept_fr": "Quantitative Easing",
+      "concept_en": "Quantitative Easing",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_qe_short": {
+      "path": "images\\tier1\\t1_qe_short.svg",
+      "tier": "tier1",
+      "type": "Cartoon SVG",
+      "concept_fr": "QE",
+      "concept_en": "QE",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_qt": {
+      "path": "images\\tier1\\t1_qt.svg",
+      "tier": "tier1",
+      "type": "Cartoon SVG",
+      "concept_fr": "Quantitative Tightening",
+      "concept_en": "Quantitative Tightening",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_qt_short": {
+      "path": "images\\tier1\\t1_qt_short.svg",
+      "tier": "tier1",
+      "type": "Cartoon SVG",
+      "concept_fr": "QT",
+      "concept_en": "QT",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_emergencymeeting": {
+      "path": "images\\tier1\\t1_emergencymeeting.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Réunion d'Urgence",
+      "concept_en": "Emergency Meeting",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_sanctions": {
+      "path": "images\\tier1\\t1_sanctions.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Sanctions",
+      "concept_en": "Sanctions",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_embargo": {
+      "path": "images\\tier1\\t1_embargo.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Embargo",
+      "concept_en": "Embargo",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_war": {
+      "path": "images\\tier1\\t1_war.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Guerre",
+      "concept_en": "War",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_conflict": {
+      "path": "images\\tier1\\t1_conflict.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Conflit",
+      "concept_en": "Conflict",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_opeccut": {
+      "path": "images\\tier1\\t1_opeccut.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "OPEC Cut",
+      "concept_en": "OPEC Reduction",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_reduceopec": {
+      "path": "images\\tier1\\t1_reduceopec.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Réduction OPEP",
+      "concept_en": "OPEC Reduction (FR)",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_geopolitical": {
+      "path": "images\\tier1\\t1_geopolitical.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Choc Géopolitique",
+      "concept_en": "Geopolitical Shock",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t1_straithormuz": {
+      "path": "images\\tier1\\t1_straithormuz.jpg",
+      "tier": "tier1",
+      "type": "Image Libre",
+      "concept_fr": "Strait Hormuz",
+      "concept_en": "Strait of Hormuz",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_fed": {
+      "path": "images\\tier2\\t2_fed.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Fed",
+      "concept_en": "Federal Reserve",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_bce": {
+      "path": "images\\tier2\\t2_bce.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "BCE",
+      "concept_en": "ECB",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_boj": {
+      "path": "images\\tier2\\t2_boj.svg",
+      "tier": "tier2",
+      "type": "Image Libre (fallback SVG)",
+      "concept_fr": "BOJ",
+      "concept_en": "Bank of Japan",
+      "license": "generated",
+      "attribution": "EcoShorts (fallback)"
+    },
+    "t2_boe": {
+      "path": "images\\tier2\\t2_boe.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Banque d'Angleterre",
+      "concept_en": "Bank of England",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_centralbank": {
+      "path": "images\\tier2\\t2_centralbank.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Banque Centrale",
+      "concept_en": "Central Bank",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_powell": {
+      "path": "images\\tier2\\t2_powell.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Jerome Powell",
+      "concept_en": "Jerome Powell",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_lagarde": {
+      "path": "images\\tier2\\t2_lagarde.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Christine Lagarde",
+      "concept_en": "Christine Lagarde",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_ueda": {
+      "path": "images\\tier2\\t2_ueda.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Ueda",
+      "concept_en": "Ueda BOJ",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_interestrate": {
+      "path": "images\\tier2\\t2_interestrate.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Taux d'Intérêt",
+      "concept_en": "Interest Rate",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_policyrate": {
+      "path": "images\\tier2\\t2_policyrate.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Taux Directeur",
+      "concept_en": "Policy Rate",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_minutes": {
+      "path": "images\\tier2\\t2_minutes.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Minutes",
+      "concept_en": "FOMC Minutes",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_statement": {
+      "path": "images\\tier2\\t2_statement.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Communiqué",
+      "concept_en": "Statement",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_guidance": {
+      "path": "images\\tier2\\t2_guidance.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Forward Guidance",
+      "concept_en": "Forward Guidance",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_cpi": {
+      "path": "images\\tier2\\t2_cpi.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "CPI",
+      "concept_en": "CPI",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_inflationreport": {
+      "path": "images\\tier2\\t2_inflationreport.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Rapport Inflation",
+      "concept_en": "Inflation Report",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_jobs": {
+      "path": "images\\tier2\\t2_jobs.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Emploi",
+      "concept_en": "Jobs",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_jobsreport": {
+      "path": "images\\tier2\\t2_jobsreport.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Rapport Emploi",
+      "concept_en": "Jobs Report",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_nfp": {
+      "path": "images\\tier2\\t2_nfp.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "NFP",
+      "concept_en": "Nonfarm Payroll",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_unemployment": {
+      "path": "images\\tier2\\t2_unemployment.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Chômage",
+      "concept_en": "Unemployment",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_unemploymentrate": {
+      "path": "images\\tier2\\t2_unemploymentrate.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Taux de Chômage",
+      "concept_en": "Unemployment Rate",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_gdp": {
+      "path": "images\\tier2\\t2_gdp.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "PIB",
+      "concept_en": "GDP",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_ppi": {
+      "path": "images\\tier2\\t2_ppi.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "PPI",
+      "concept_en": "Producer Prices",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_pce": {
+      "path": "images\\tier2\\t2_pce.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "PCE",
+      "concept_en": "Personal Consumption",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_retail": {
+      "path": "images\\tier2\\t2_retail.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Ventes au Détail",
+      "concept_en": "Retail Sales",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_pmi": {
+      "path": "images\\tier2\\t2_pmi.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "PMI",
+      "concept_en": "PMI",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_ism": {
+      "path": "images\\tier2\\t2_ism.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "ISM",
+      "concept_en": "ISM",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_tradebalance": {
+      "path": "images\\tier2\\t2_tradebalance.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Balance Commerciale",
+      "concept_en": "Trade Balance",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_sp500": {
+      "path": "images\\tier2\\t2_sp500.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "S&P 500",
+      "concept_en": "S&P 500",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_nasdaq": {
+      "path": "images\\tier2\\t2_nasdaq.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Nasdaq",
+      "concept_en": "Nasdaq",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_dowjones": {
+      "path": "images\\tier2\\t2_dowjones.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Dow Jones",
+      "concept_en": "Dow Jones",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_cac40": {
+      "path": "images\\tier2\\t2_cac40.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "CAC 40",
+      "concept_en": "CAC 40",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_dax": {
+      "path": "images\\tier2\\t2_dax.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "DAX",
+      "concept_en": "DAX",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_nikkei": {
+      "path": "images\\tier2\\t2_nikkei.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Nikkei",
+      "concept_en": "Nikkei",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_bearmarket": {
+      "path": "images\\tier2\\t2_bearmarket.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Marché Baissier",
+      "concept_en": "Bear Market",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_bullmarket": {
+      "path": "images\\tier2\\t2_bullmarket.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Marché Haussier",
+      "concept_en": "Bull Market",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_yieldcurve": {
+      "path": "images\\tier2\\t2_yieldcurve.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Courbe des Rendements",
+      "concept_en": "Yield Curve",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_invertedyield": {
+      "path": "images\\tier2\\t2_invertedyield.svg",
+      "tier": "tier2",
+      "type": "Cartoon SVG",
+      "concept_fr": "Inversion Courbe",
+      "concept_en": "Inverted Yield",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_treasury": {
+      "path": "images\\tier2\\t2_treasury.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Trésor",
+      "concept_en": "Treasury",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "Marchés_Financiers": {
+      "path": "images\\tier2\\Marchés Financiers.svg",
+      "tier": "tier2",
+      "type": "Image Libre (fallback SVG)",
+      "concept_fr": "Bund",
+      "concept_en": "Bund",
+      "license": "generated",
+      "attribution": "EcoShorts (fallback)"
+    },
+    "t2_oat": {
+      "path": "images\\tier2\\t2_oat.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "OAT",
+      "concept_en": "OAT",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_dxy": {
+      "path": "images\\tier2\\t2_dxy.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Dollar Index",
+      "concept_en": "DXY",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_eurusd": {
+      "path": "images\\tier2\\t2_eurusd.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "EUR/USD",
+      "concept_en": "EUR/USD",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_strongdollar": {
+      "path": "images\\tier2\\t2_strongdollar.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Dollar Fort",
+      "concept_en": "Strong Dollar",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_weakdollar": {
+      "path": "images\\tier2\\t2_weakdollar.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Dollar Faible",
+      "concept_en": "Weak Dollar",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_gold": {
+      "path": "images\\tier2\\t2_gold.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Or",
+      "concept_en": "Gold",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_oil": {
+      "path": "images\\tier2\\t2_oil.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Pétrole",
+      "concept_en": "Oil",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_brent": {
+      "path": "images\\tier2\\t2_brent.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Brent",
+      "concept_en": "Brent Crude",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_wti": {
+      "path": "images\\tier2\\t2_wti.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "WTI",
+      "concept_en": "WTI Crude",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_opec": {
+      "path": "images\\tier2\\t2_opec.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "OPEC",
+      "concept_en": "OPEC",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_naturalgas": {
+      "path": "images\\tier2\\t2_naturalgas.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Gaz Naturel",
+      "concept_en": "Natural Gas",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_copper": {
+      "path": "images\\tier2\\t2_copper.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Cuivre",
+      "concept_en": "Copper",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2_silver": {
+      "path": "images\\tier2\\t2_silver.jpg",
+      "tier": "tier2",
+      "type": "Image Libre",
+      "concept_fr": "Argent",
+      "concept_en": "Silver",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_growth": {
+      "path": "images\\tier3\\t3_growth.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Croissance",
+      "concept_en": "Growth",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_slowdown": {
+      "path": "images\\tier3\\t3_slowdown.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Ralentissement",
+      "concept_en": "Slowdown",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_expansion": {
+      "path": "images\\tier3\\t3_expansion.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Expansion",
+      "concept_en": "Expansion",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_contraction": {
+      "path": "images\\tier3\\t3_contraction.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Contraction",
+      "concept_en": "Contraction",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_softlanding": {
+      "path": "images\\tier3\\t3_softlanding.svg",
+      "tier": "tier3",
+      "type": "Cartoon SVG",
+      "concept_fr": "Atterrissage Doux",
+      "concept_en": "Soft Landing",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_consumconf": {
+      "path": "images\\tier3\\t3_consumconf.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Confiance Consommateurs",
+      "concept_en": "Consumer Confidence",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_bizconf": {
+      "path": "images\\tier3\\t3_bizconf.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Confiance Entreprises",
+      "concept_en": "Business Confidence",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_spending": {
+      "path": "images\\tier3\\t3_spending.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Dépenses Consommateurs",
+      "concept_en": "Consumer Spending",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_employment": {
+      "path": "images\\tier3\\t3_employment.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Emploi",
+      "concept_en": "Employment",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_hiring": {
+      "path": "images\\tier3\\t3_hiring.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Embauche",
+      "concept_en": "Hiring",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_adp": {
+      "path": "images\\tier3\\t3_adp.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "ADP",
+      "concept_en": "ADP Report",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_jolts": {
+      "path": "images\\tier3\\t3_jolts.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "JOLTS",
+      "concept_en": "Job Openings",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_claims": {
+      "path": "images\\tier3\\t3_claims.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Demandes Chômage",
+      "concept_en": "Unemployment Claims",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_participation": {
+      "path": "images\\tier3\\t3_participation.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Taux de Participation",
+      "concept_en": "Participation Rate",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_wagegrowth": {
+      "path": "images\\tier3\\t3_wagegrowth.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Croissance Salaires",
+      "concept_en": "Wage Growth",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_layoffs": {
+      "path": "images\\tier3\\t3_layoffs.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Licenciements",
+      "concept_en": "Layoffs",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_earnings": {
+      "path": "images\\tier3\\t3_earnings.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Résultats",
+      "concept_en": "Earnings",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_revenue": {
+      "path": "images\\tier3\\t3_revenue.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Chiffre d'Affaires",
+      "concept_en": "Revenue",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_profit": {
+      "path": "images\\tier3\\t3_profit.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Profit",
+      "concept_en": "Profit",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_merger": {
+      "path": "images\\tier3\\t3_merger.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Fusion",
+      "concept_en": "Merger",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_acquisition": {
+      "path": "images\\tier3\\t3_acquisition.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Acquisition",
+      "concept_en": "Acquisition",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_ipo": {
+      "path": "images\\tier3\\t3_ipo.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "IPO",
+      "concept_en": "IPO",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_dividend": {
+      "path": "images\\tier3\\t3_dividend.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Dividende",
+      "concept_en": "Dividend",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_buyback": {
+      "path": "images\\tier3\\t3_buyback.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Rachat d'Actions",
+      "concept_en": "Buyback",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_techlayoffs": {
+      "path": "images\\tier3\\t3_techlayoffs.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Tech Layoffs",
+      "concept_en": "Tech Layoffs",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "Finance": {
+      "path": "images\\tier3\\Finance.svg",
+      "tier": "tier3",
+      "type": "Image Libre (fallback SVG)",
+      "concept_fr": "Dépenses IA",
+      "concept_en": "AI Capex",
+      "license": "generated",
+      "attribution": "EcoShorts (fallback)"
+    },
+    "t3_housing": {
+      "path": "images\\tier3\\t3_housing.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Immobilier",
+      "concept_en": "Housing",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_mortgage": {
+      "path": "images\\tier3\\t3_mortgage.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Taux Hypothécaire",
+      "concept_en": "Mortgage Rate",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_homesales": {
+      "path": "images\\tier3\\t3_homesales.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Ventes Immobilières",
+      "concept_en": "Home Sales",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_construction": {
+      "path": "images\\tier3\\t3_construction.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Construction",
+      "concept_en": "Construction",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_energycrisis": {
+      "path": "images\\tier3\\t3_energycrisis.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Crise Énergétique",
+      "concept_en": "Energy Crisis",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_solar": {
+      "path": "images\\tier3\\t3_solar.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Énergie Solaire",
+      "concept_en": "Solar",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_wind": {
+      "path": "images\\tier3\\t3_wind.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Énergie Éolienne",
+      "concept_en": "Wind",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_renewable": {
+      "path": "images\\tier3\\t3_renewable.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Énergies Renouvelables",
+      "concept_en": "Renewable",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_ev": {
+      "path": "images\\tier3\\t3_ev.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Voiture Électrique",
+      "concept_en": "EV",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_coreinflation": {
+      "path": "images\\tier3\\t3_coreinflation.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Inflation Sous-jacente",
+      "concept_en": "Core Inflation",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_currentaccount": {
+      "path": "images\\tier3\\t3_currentaccount.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Compte Courant",
+      "concept_en": "Current Account",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_tariffs": {
+      "path": "images\\tier3\\t3_tariffs.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Tarifs",
+      "concept_en": "Tariffs",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_tradewar": {
+      "path": "images\\tier3\\t3_tradewar.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Guerre Commerciale",
+      "concept_en": "Trade War",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_supplychian": {
+      "path": "images\\tier3\\t3_supplychian.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Chaîne d'Approvisionnement",
+      "concept_en": "Supply Chain",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_brics": {
+      "path": "images\\tier3\\t3_brics.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "BRICS",
+      "concept_en": "BRICS",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_imf": {
+      "path": "images\\tier3\\t3_imf.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "FMI",
+      "concept_en": "IMF",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_worldbank": {
+      "path": "images\\tier3\\t3_worldbank.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "Banque Mondiale",
+      "concept_en": "World Bank",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_g7": {
+      "path": "images\\tier3\\t3_g7.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "G7",
+      "concept_en": "G7",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t3_g20": {
+      "path": "images\\tier3\\t3_g20.jpg",
+      "tier": "tier3",
+      "type": "Image Libre",
+      "concept_fr": "G20",
+      "concept_en": "G20",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_menace": {
+      "path": "images\\emotional\\emo_peur_menace.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Menace",
+      "concept_en": "Threatens",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_destroy": {
+      "path": "images\\emotional\\emo_peur_destroy.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Détruit",
+      "concept_en": "Destroys",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_wipeout": {
+      "path": "images\\emotional\\emo_peur_wipeout.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Efface",
+      "concept_en": "Wipes Out",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_erodes": {
+      "path": "images\\emotional\\emo_peur_erodes.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Ronge",
+      "concept_en": "Erodes",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_devours": {
+      "path": "images\\emotional\\emo_peur_devours.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Dévore",
+      "concept_en": "Devours",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_collapse": {
+      "path": "images\\emotional\\emo_peur_collapse.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "S'Effondre",
+      "concept_en": "Collapses",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_plunge": {
+      "path": "images\\emotional\\emo_peur_plunge.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Plonge",
+      "concept_en": "Plunges",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_vanish": {
+      "path": "images\\emotional\\emo_peur_vanish.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Disparaît",
+      "concept_en": "Vanishes",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_urgent": {
+      "path": "images\\emotional\\emo_peur_urgent.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Avant qu'il soit trop tard",
+      "concept_en": "Before It's Too Late",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_now": {
+      "path": "images\\emotional\\emo_peur_now.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Maintenant",
+      "concept_en": "Right Now",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_window": {
+      "path": "images\\emotional\\emo_peur_window.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "La fenêtre se ferme",
+      "concept_en": "Window Is Closing",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_savings": {
+      "path": "images\\emotional\\emo_peur_savings.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Votre épargne",
+      "concept_en": "Your Savings",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_peur_retirement": {
+      "path": "images\\emotional\\emo_peur_retirement.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Votre retraite",
+      "concept_en": "Your Retirement",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_never": {
+      "path": "images\\emotional\\emo_surprise_never.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Jamais Vu",
+      "concept_en": "Never Seen",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_unprecedented": {
+      "path": "images\\emotional\\emo_surprise_unprecedented.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Inédit",
+      "concept_en": "Unprecedented",
+      "license": "generated",
+      "attribution": "EcoShorts (generated)"
+    },
+    "emo_surprise_historic": {
+      "path": "images\\emotional\\emo_surprise_historic.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Sans Précédent",
+      "concept_en": "Historic",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_firsttime": {
+      "path": "images\\emotional\\emo_surprise_firsttime.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Pour la première fois",
+      "concept_en": "For the First Time",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_unexpected": {
+      "path": "images\\emotional\\emo_surprise_unexpected.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Personne n'y croyait",
+      "concept_en": "Nobody Expected",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_shock": {
+      "path": "images\\emotional\\emo_surprise_shock.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Choc",
+      "concept_en": "Shocking",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_staggering": {
+      "path": "images\\emotional\\emo_surprise_staggering.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Stupéfiant",
+      "concept_en": "Staggering",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_gamechanger": {
+      "path": "images\\emotional\\emo_surprise_gamechanger.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Bouleverse tout",
+      "concept_en": "Game-Changer",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_odds": {
+      "path": "images\\emotional\\emo_surprise_odds.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Contre toute attente",
+      "concept_en": "Against All Odds",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_surprise_twist": {
+      "path": "images\\emotional\\emo_surprise_twist.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Retournement",
+      "concept_en": "Plot Twist",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_while": {
+      "path": "images\\emotional\\emo_anger_while.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Pendant que vous...",
+      "concept_en": "While You...",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_banks": {
+      "path": "images\\emotional\\emo_anger_banks.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Les banques",
+      "concept_en": "The Banks",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_hidden": {
+      "path": "images\\emotional\\emo_anger_hidden.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Ce qu'ils ne vous disent pas",
+      "concept_en": "Hidden Truth",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_scandal": {
+      "path": "images\\emotional\\emo_anger_scandal.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Scandale",
+      "concept_en": "Outrage",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_unacceptable": {
+      "path": "images\\emotional\\emo_anger_unacceptable.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Inacceptable",
+      "concept_en": "Unacceptable",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_wages": {
+      "path": "images\\emotional\\emo_anger_wages.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Pendant que votre salaire stagne",
+      "concept_en": "While Your Wages Stagnate",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_profits": {
+      "path": "images\\emotional\\emo_anger_profits.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Profits records",
+      "concept_en": "Record Profits",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_elites": {
+      "path": "images\\emotional\\emo_anger_elites.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Les élites",
+      "concept_en": "The Elites",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anger_double": {
+      "path": "images\\emotional\\emo_anger_double.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Deux poids deux mesures",
+      "concept_en": "Double Standard",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_miss": {
+      "path": "images\\emotional\\emo_fomo_miss.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Ne ratez pas",
+      "concept_en": "Don't Miss",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_actnow": {
+      "path": "images\\emotional\\emo_fomo_actnow.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "À saisir maintenant",
+      "concept_en": "Act Now",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_window": {
+      "path": "images\\emotional\\emo_fomo_window.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "La fenêtre est ouverte",
+      "concept_en": "Window of Opportunity",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_acttoday": {
+      "path": "images\\emotional\\emo_fomo_acttoday.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Ceux qui agissent maintenant",
+      "concept_en": "Those Who Act Today",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_surge": {
+      "path": "images\\emotional\\emo_fomo_surge.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Avant la prochaine hausse",
+      "concept_en": "Before the Next Surge",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_unique": {
+      "path": "images\\emotional\\emo_fomo_unique.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "L'occasion unique",
+      "concept_en": "Once-in-a-Lifetime",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_stilltime": {
+      "path": "images\\emotional\\emo_fomo_stilltime.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Pendant qu'il est encore temps",
+      "concept_en": "While There's Still Time",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_fomo_smartmoney": {
+      "path": "images\\emotional\\emo_fomo_smartmoney.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Ce que font les smart money",
+      "concept_en": "What Smart Money Is Doing",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_uncertain": {
+      "path": "images\\emotional\\emo_anxiety_uncertain.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Incertitude",
+      "concept_en": "Uncertainty",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_worry": {
+      "path": "images\\emotional\\emo_anxiety_worry.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Inquiétant",
+      "concept_en": "Worrying",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_concern": {
+      "path": "images\\emotional\\emo_anxiety_concern.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Préoccupant",
+      "concept_en": "Concerning",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_unstable": {
+      "path": "images\\emotional\\emo_anxiety_unstable.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Instabilité",
+      "concept_en": "Instability",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_tension": {
+      "path": "images\\emotional\\emo_anxiety_tension.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Tension",
+      "concept_en": "Tension",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_turbulent": {
+      "path": "images\\emotional\\emo_anxiety_turbulent.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Turbulence",
+      "concept_en": "Turbulence",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_risk": {
+      "path": "images\\emotional\\emo_anxiety_risk.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Risque",
+      "concept_en": "Risk",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_vulnerable": {
+      "path": "images\\emotional\\emo_anxiety_vulnerable.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Vulnérable",
+      "concept_en": "Vulnerable",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_fragile": {
+      "path": "images\\emotional\\emo_anxiety_fragile.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Fragile",
+      "concept_en": "Fragile",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_anxiety_pressure": {
+      "path": "images\\emotional\\emo_anxiety_pressure.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Sous pression",
+      "concept_en": "Under Pressure",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_good": {
+      "path": "images\\emotional\\emo_relief_good.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Bonne nouvelle",
+      "concept_en": "Good News",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_finally": {
+      "path": "images\\emotional\\emo_relief_finally.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Enfin",
+      "concept_en": "Finally",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_improving": {
+      "path": "images\\emotional\\emo_relief_improving.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Ça s'améliore",
+      "concept_en": "Improving",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_rebound": {
+      "path": "images\\emotional\\emo_relief_rebound.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Rebond",
+      "concept_en": "Rebound",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_recovery": {
+      "path": "images\\emotional\\emo_relief_recovery.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Reprise",
+      "concept_en": "Recovery",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_stable": {
+      "path": "images\\emotional\\emo_relief_stable.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Stabilisation",
+      "concept_en": "Stabilization",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_protect": {
+      "path": "images\\emotional\\emo_relief_protect.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Protection",
+      "concept_en": "Protection",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_solution": {
+      "path": "images\\emotional\\emo_relief_solution.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Solution",
+      "concept_en": "Solution",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_howto": {
+      "path": "images\\emotional\\emo_relief_howto.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Voici quoi faire",
+      "concept_en": "Here's What to Do",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "emo_relief_howprotect": {
+      "path": "images\\emotional\\emo_relief_howprotect.svg",
+      "tier": "emotional",
+      "type": "Cartoon SVG",
+      "concept_fr": "Comment s'en sortir",
+      "concept_en": "How to Protect Yourself",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_goldprice": {
+      "path": "images\\trend2026\\t2026_goldprice.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Prix de l'Or 2026",
+      "concept_en": "Gold Price 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_goldrecord": {
+      "path": "images\\trend2026\\t2026_goldrecord.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Record Or",
+      "concept_en": "Gold Record",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_goldalltime": {
+      "path": "images\\trend2026\\t2026_goldalltime.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Or All-Time",
+      "concept_en": "Gold All-Time",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_buygold": {
+      "path": "images\\trend2026\\t2026_buygold.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Acheter Or",
+      "concept_en": "Buy Gold",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_fedhike": {
+      "path": "images\\trend2026\\t2026_fedhike.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Hausse Taux Fed 2026",
+      "concept_en": "Fed Rate Hike 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_fedcut": {
+      "path": "images\\trend2026\\t2026_fedcut.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Baisse Taux Fed 2026",
+      "concept_en": "Fed Rate Cut 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_ratedecision": {
+      "path": "images\\trend2026\\t2026_ratedecision.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Décision Taux 2026",
+      "concept_en": "Rate Decision 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_fomc2026": {
+      "path": "images\\trend2026\\t2026_fomc2026.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "FOMC 2026",
+      "concept_en": "FOMC 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_inflation": {
+      "path": "images\\trend2026\\t2026_inflation.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Inflation 2026",
+      "concept_en": "Inflation 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_cpireport": {
+      "path": "images\\trend2026\\t2026_cpireport.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "CPI Report 2026",
+      "concept_en": "CPI Report 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_infration_fr": {
+      "path": "images\\trend2026\\t2026_infration_fr.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Inflation France",
+      "concept_en": "Inflation France",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_infpeak": {
+      "path": "images\\trend2026\\t2026_infpeak.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Pic Inflation",
+      "concept_en": "Inflation Peak",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_oilspike": {
+      "path": "images\\trend2026\\t2026_oilspike.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Prix Pétrole Spike",
+      "concept_en": "Oil Price Spike",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_oilprice2026": {
+      "path": "images\\trend2026\\t2026_oilprice2026.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Prix Pétrole 2026",
+      "concept_en": "Oil Price 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_brent2026": {
+      "path": "images\\trend2026\\t2026_brent2026.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Brent Crude 2026",
+      "concept_en": "Brent Crude 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_opec2026": {
+      "path": "images\\trend2026\\t2026_opec2026.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "OPEC 2026",
+      "concept_en": "OPEC 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_recession": {
+      "path": "images\\trend2026\\t2026_recession.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Récession 2026",
+      "concept_en": "Recession 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_recession_fr": {
+      "path": "images\\trend2026\\t2026_recession_fr.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Récession France",
+      "concept_en": "Recession France",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_crisis": {
+      "path": "images\\trend2026\\t2026_crisis.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Crise Économique",
+      "concept_en": "Economic Crisis 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_jobsreport": {
+      "path": "images\\trend2026\\t2026_jobsreport.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Jobs Report 2026",
+      "concept_en": "Jobs Report 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_nfp2026": {
+      "path": "images\\trend2026\\t2026_nfp2026.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "NFP 2026",
+      "concept_en": "Nonfarm Payroll 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_unemployment": {
+      "path": "images\\trend2026\\t2026_unemployment.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Chômage 2026",
+      "concept_en": "Unemployment 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_brics": {
+      "path": "images\\trend2026\\t2026_brics.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Brics 2026",
+      "concept_en": "BRICS 2026",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_dollarcollapse": {
+      "path": "images\\trend2026\\t2026_dollarcollapse.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Dollar Collapse",
+      "concept_en": "Dollar Collapse",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    },
+    "t2026_usdebt": {
+      "path": "images\\trend2026\\t2026_usdebt.jpg",
+      "tier": "trend2026",
+      "type": "Image Libre",
+      "concept_fr": "Dette US",
+      "concept_en": "US Debt",
+      "license": "Slide/images",
+      "attribution": "Slide/images (real image)"
+    }
+  }
+}

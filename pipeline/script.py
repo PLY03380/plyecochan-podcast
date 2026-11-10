@@ -195,7 +195,9 @@ def generer_script(fait: dict) -> dict:
     )
     
     last_error = None
-    data = call_llm_json(prompt, max_tokens=1500)
+    # 4000 tokens : Gemini 2.5 "pense" avant de repondre (tokens de reasoning
+    # inclus dans max_tokens) -> 1500 tronquait le JSON a chaque fois.
+    data = call_llm_json(prompt, max_tokens=4000)
     if not data:
         raise RuntimeError("Tous les providers LLM ont echoue")
 
