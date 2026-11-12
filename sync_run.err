@@ -1,0 +1,14 @@
+C:\Users\PLY\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\site-packages\google\api_core\_python_version_support.py:254: FutureWarning: You are using a Python version (3.11.15) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Videos deja uploadees: 97
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Deja uploade (fr): Inflation : Votre pouvoir d'achat menacé
+INFO Upload manquant: 11-11-2026_short_en.mp4 (en)
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Upload 11-11-2026_short_en.mp4...
+ERROR Upload en échoué: <HttpError 400 when requesting None returned "The user has exceeded the number of videos they may upload.". Details: "[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]">
+INFO Upload manquant: 11-11-2026_short_es.mp4 (es)
+INFO file_cache is only supported with oauth2client<4.0.0
+INFO Upload 11-11-2026_short_es.mp4...
+ERROR Upload es échoué: <HttpError 400 when requesting None returned "The user has exceeded the number of videos they may upload.". Details: "[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]">

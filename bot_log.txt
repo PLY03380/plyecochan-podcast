@@ -1,3 +1,523 @@
 WARNING bot Bot deja en cours (lock file present), sortie.
 WARNING bot Bot deja en cours (lock file present), sortie.
 WARNING bot Bot deja en cours (lock file present), sortie.
+INFO bot === DÉBUT PIPELINE — thème: inflation ===
+INFO bot Manifest images OK: 219 concepts
+INFO veille Flux bbc_business : 26 articles récents
+INFO veille Flux rfi_economie : 3 articles récents
+INFO veille Flux lemonde_economie : 20 articles récents
+INFO bot Articles récupérés: 49
+INFO selection SÉLECTION: US inflation higher than expected in October - here's what i | score=113.0 | theme=inflation | bbc_business
+INFO bot Sujet retenu: US inflation higher than expected in October - here's what i | score=113.0 | theme=inflation
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script Script généré OK via LLM multi-provider
+INFO bot Script généré pour 3 langues
+INFO bot   fr: title=90/100, thumb=INFLATION VOTRE POUVOIR, tags=9, hook=WEAK
+INFO bot   en: title=76/100, thumb=INFLATION PURCHASING POWER, tags=10, hook=WEAK
+INFO bot   es: title=76/100, thumb=INFLACI N TU, tags=7, hook=WEAK
+INFO voix Piper OK: accroche_fr.mp3
+INFO voix \u2713 fr/accroche: accroche_fr.mp3
+INFO voix Piper OK: fait_fr.mp3
+INFO voix \u2713 fr/fait: fait_fr.mp3
+INFO voix Piper OK: pourquoi_fr.mp3
+INFO voix \u2713 fr/pourquoi: pourquoi_fr.mp3
+INFO voix Piper OK: impact_fr.mp3
+INFO voix \u2713 fr/impact: impact_fr.mp3
+INFO voix Piper OK: conclusion_fr.mp3
+INFO voix \u2713 fr/conclusion: conclusion_fr.mp3
+INFO voix Piper OK: accroche_en.mp3
+INFO voix \u2713 en/accroche: accroche_en.mp3
+INFO voix Piper OK: fait_en.mp3
+INFO voix \u2713 en/fait: fait_en.mp3
+INFO voix Piper OK: pourquoi_en.mp3
+INFO voix \u2713 en/pourquoi: pourquoi_en.mp3
+INFO voix Piper OK: impact_en.mp3
+INFO voix \u2713 en/impact: impact_en.mp3
+INFO voix Piper OK: conclusion_en.mp3
+INFO voix \u2713 en/conclusion: conclusion_en.mp3
+INFO voix Piper OK: accroche_es.mp3
+INFO voix \u2713 es/accroche: accroche_es.mp3
+INFO voix Piper OK: fait_es.mp3
+INFO voix \u2713 es/fait: fait_es.mp3
+INFO voix Piper OK: pourquoi_es.mp3
+INFO voix \u2713 es/pourquoi: pourquoi_es.mp3
+INFO voix Piper OK: impact_es.mp3
+INFO voix \u2713 es/impact: impact_es.mp3
+INFO voix Piper OK: conclusion_es.mp3
+INFO voix \u2713 es/conclusion: conclusion_es.mp3
+INFO bot Voix generee: 3 langues
+INFO bot Durees audio reelles: {'accroche': 4.5, 'fait': 11.0, 'pourquoi': 8.6, 'impact': 8.9, 'conclusion': 6.3}
+INFO visuels Images pour accroche: 1 (duree ~4.54)
+INFO visuels Images pour fait: 3 (duree ~10.97)
+INFO visuels Images pour pourquoi: 2 (duree ~8.62)
+INFO visuels Images pour impact: 2 (duree ~8.9)
+INFO visuels Images pour conclusion: 2 (duree ~6.29)
+INFO visuels Images copiees pour accroche: 1
+INFO visuels Images copiees pour fait: 3
+INFO visuels Images copiees pour pourquoi: 2
+INFO visuels Images copiees pour impact: 2
+INFO visuels Images copiees pour conclusion: 2
+INFO bot Images generees: 5 blocs
+INFO bot   accroche: 1 images
+INFO bot   fait: 3 images
+INFO bot   pourquoi: 2 images
+INFO bot   impact: 2 images
+INFO bot   conclusion: 2 images
+INFO montage Preset accroche OK: accroche fr.mp4
+INFO montage clip accroche/0 OK (4.54s)
+INFO montage seg accroche OK (4.54s + audio)
+INFO montage Preset fait OK: fait fr.mp4
+INFO montage clip fait/0 OK (3.66s)
+INFO montage clip fait/1 OK (3.66s)
+INFO montage clip fait/2 OK (3.66s)
+INFO montage seg fait OK (10.97s + audio)
+INFO montage Preset pourquoi OK: pourquoi fr.mp4
+INFO montage clip pourquoi/0 OK (4.31s)
+INFO montage clip pourquoi/1 OK (4.31s)
+INFO montage seg pourquoi OK (8.62s + audio)
+INFO montage Preset impact OK: impact fr.mp4
+INFO montage clip impact/0 OK (4.45s)
+INFO montage clip impact/1 OK (4.45s)
+INFO montage seg impact OK (8.9s + audio)
+INFO montage clip conclusion/0 OK (3.15s)
+INFO montage clip conclusion/1 OK (3.15s)
+INFO montage seg conclusion OK (6.29s + audio)
+INFO montage Preset subscribe OK: subscribe fr.mp4
+INFO montage \u2713 11-11-2026_short_fr.mp4 cree
+INFO montage Preset accroche OK: accroche en.mp4
+INFO montage clip accroche/0 OK (4.7s)
+INFO montage seg accroche OK (4.7s + audio)
+INFO montage Preset fait OK: fait en.mp4
+INFO montage clip fait/0 OK (3.57s)
+INFO montage clip fait/1 OK (3.57s)
+INFO montage clip fait/2 OK (3.57s)
+INFO montage seg fait OK (10.7s + audio)
+INFO montage Preset pourquoi OK: pourquoi en.mp4
+INFO montage clip pourquoi/0 OK (4.02s)
+INFO montage clip pourquoi/1 OK (4.02s)
+INFO montage seg pourquoi OK (8.04s + audio)
+INFO montage Preset impact OK: impact en.mp4
+INFO montage clip impact/0 OK (4.31s)
+INFO montage clip impact/1 OK (4.31s)
+INFO montage seg impact OK (8.62s + audio)
+INFO montage clip conclusion/0 OK (2.85s)
+INFO montage clip conclusion/1 OK (2.85s)
+INFO montage seg conclusion OK (5.69s + audio)
+INFO montage Preset subscribe OK: subscribe en.mp4
+INFO montage \u2713 11-11-2026_short_en.mp4 cree
+INFO montage Preset accroche OK: accroche es.mp4
+INFO montage clip accroche/0 OK (4.8s)
+INFO montage seg accroche OK (4.8s + audio)
+INFO montage Preset fait OK: fait es.mp4
+INFO montage clip fait/0 OK (3.63s)
+INFO montage clip fait/1 OK (3.63s)
+INFO montage clip fait/2 OK (3.63s)
+INFO montage seg fait OK (10.9s + audio)
+INFO montage Preset pourquoi OK: pourquoi es.mp4
+INFO montage clip pourquoi/0 OK (4.98s)
+INFO montage clip pourquoi/1 OK (4.98s)
+INFO montage seg pourquoi OK (9.96s + audio)
+INFO montage Preset impact OK: impact es.mp4
+INFO montage clip impact/0 OK (4.64s)
+INFO montage clip impact/1 OK (4.64s)
+INFO montage seg impact OK (9.29s + audio)
+INFO montage clip conclusion/0 OK (3.69s)
+INFO montage clip conclusion/1 OK (3.69s)
+INFO montage seg conclusion OK (7.39s + audio)
+INFO montage Preset subscribe OK: subscribe es.mp4
+INFO montage \u2713 11-11-2026_short_es.mp4 cree
+INFO bot Videos: {'fr': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-11\\11-11-2026_short_fr.mp4', 'en': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-11\\11-11-2026_short_en.mp4', 'es': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-11\\11-11-2026_short_es.mp4'}
+C:\Users\PLY\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\site-packages\google\api_core\_python_version_support.py:254: FutureWarning: You are using a Python version (3.11.15) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO upload Upload 11-11-2026_short_fr.mp4...
+INFO upload Video uploaded: https://youtu.be/JNeYPsUBlak
+INFO upload Added to playlist: Actualités économiques FR
+INFO upload Upload 11-11-2026_short_en.mp4...
+ERROR upload Upload en échoué: <HttpError 400 when requesting None returned "The user has exceeded the number of videos they may upload.". Details: "[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]">
+INFO upload Upload 11-11-2026_short_es.mp4...
+ERROR upload Upload es échoué: <HttpError 400 when requesting None returned "The user has exceeded the number of videos they may upload.". Details: "[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]">
+INFO bot Uploads: {'fr': 'JNeYPsUBlak', 'en': None, 'es': None}
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO sync_uploads Videos deja uploadees: 97
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO sync_uploads Deja uploade (fr): Inflation : Votre pouvoir d'achat menacé
+INFO sync_uploads Upload manquant: 11-11-2026_short_en.mp4 (en)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO upload Upload 11-11-2026_short_en.mp4...
+ERROR upload Upload en échoué: <HttpError 400 when requesting None returned "The user has exceeded the number of videos they may upload.". Details: "[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]">
+INFO sync_uploads Upload manquant: 11-11-2026_short_es.mp4 (es)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO upload Upload 11-11-2026_short_es.mp4...
+ERROR upload Upload es échoué: <HttpError 400 when requesting None returned "The user has exceeded the number of videos they may upload.". Details: "[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]">
+INFO publish_pending === PUBLISH PENDING - 2026-11-11 ===
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO publish_pending Videos uploadees sur YouTube: 65
+INFO publish_pending Video fr: JNeYPsUBlak
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+WARNING llm JSON parse error: Unterminated string starting at: line 2 column 14 (char 15)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO google_auth_httplib2 Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO blogger Article créé: 4689963091266464414 (draft=False)
+INFO publish_pending Article Blogger fr cree: https://www.blogger.com/blog/post/edit/4322044525709685461/4689963091266464414
+WARNING publish_pending Blogger en: pas de video_id, skip
+WARNING publish_pending Blogger es: pas de video_id, skip
+WARNING indexing Fichier credentials non trouvé: plychanbot-1937b6d23966.json
+INFO publish_pending Indexation Google demandee
+INFO indexing_bing Indexe Bing/DuckDuckGo: https://plychaneconomie.blogspot.com/p/indexnow-key.html
+INFO publish_pending Indexation Bing/DuckDuckGo demandee
+INFO fb_engage 3 posts prepares pour validation
+INFO fb_engage 3 actions approuvees
+INFO facebook Post Facebook publie: 1389261604274221_122107293477528594
+INFO fb_engage Post FB publie: 1389261604274221_122107293477528594
+INFO facebook Post Facebook publie: 1389261604274221_122107293579528594
+INFO fb_engage Post FB publie: 1389261604274221_122107293579528594
+INFO facebook Post Facebook publie: 1389261604274221_122107293717528594
+INFO fb_engage Post FB publie: 1389261604274221_122107293717528594
+INFO fb_engage 3 actions publiees
+INFO publish_pending Facebook engagement: 3 posts publies (auto)
+ERROR multi_social Publora echoue: 403 Client Error: Forbidden for url: https://api.publora.com/api/v1/create-post
+WARNING multi_social Distribution echouee: Inflation : Votre pouvoir d'achat menacé
+INFO publish_pending Distribution multi-reseaux fr: OK
+WARNING newsletter Brevo: pas de cle (BREVO_API_KEY requise)
+INFO publish_pending Newsletter fr: envoyee
+INFO publish_pending === PUBLISH PENDING TERMINE ===
+INFO bot Publication Blogger/Facebook/Indexation terminée
+INFO bot === FIN PIPELINE OK ===
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.476790 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.919181 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.496906 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.813178 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/introduction genere (190 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.420167 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.893013 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/contexte genere (224 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.490293 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.806294 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script_long Bloc fr/fait genere (242 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.443709 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.842291 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/analyse genere (170 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.431126 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.896790 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/pourquoi genere (227 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.499706 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.981626 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/impact genere (207 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.460418 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.816880 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/opinion genere (172 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.404503 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.909496 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/ia_analysis genere (230 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.425635 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.907733 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/perspectives genere (175 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.410683 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.807205 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc fr/conclusion genere (167 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.478239 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.896202 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.376846 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.810373 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/introduction genere (181 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.453104 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.904388 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/context genere (229 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.493094 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.813777 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/fact genere (176 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.399164 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.804435 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/analysis genere (191 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.421288 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.826093 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/why genere (171 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.443087 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.961600 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/impact genere (196 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.413665 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.945646 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/opinion genere (211 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.431168 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.951704 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/ai_analysis genere (234 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.403864 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.984369 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/perspectives genere (183 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.477052 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.946721 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc en/conclusion genere (208 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.381594 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.817029 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.492141 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.932030 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/introduction genere (164 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.385409 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.998807 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/contexto genere (231 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.431945 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.765948 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/hecho genere (169 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.375717 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.762075 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/analisis genere (223 mots)
+INFO openai._base_client Retrying request in 0.491547 seconds (retry 1 of 2)
+INFO openai._base_client Retrying request in 0.976525 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script_long Bloc es/por_que genere (197 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.481959 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script_long Bloc es/impacto genere (266 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.401855 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.853207 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/opinion genere (9 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.497173 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.848570 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script_long Bloc es/ia_analysis genere (194 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.386598 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.893831 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/perspectivas genere (195 mots)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.432166 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.854266 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Ollama/llama3.2:latest
+INFO script_long Bloc es/conclusion genere (164 mots)
+INFO bot Mode video longue: long (has_long=True)
+INFO visuels Images pour introduction: 8 (duree ~76.0)
+INFO visuels Images pour contexte: 9 (duree ~89.6)
+INFO visuels Images pour fait: 10 (duree ~96.8)
+INFO visuels Images pour analyse: 7 (duree ~68.0)
+INFO visuels Images pour pourquoi: 10 (duree ~90.8)
+INFO visuels Images pour impact: 9 (duree ~82.8)
+INFO visuels Images pour opinion: 9 (duree ~84.4)
+INFO visuels Images pour ia_analysis: 10 (duree ~92.0)
+INFO visuels Images pour perspectives: 8 (duree ~73.2)
+INFO visuels Images pour conclusion: 9 (duree ~83.2)
+INFO visuels Images copiees pour introduction: 8
+INFO visuels Images copiees pour contexte: 9
+INFO visuels Images copiees pour fait: 10
+INFO visuels Images copiees pour analyse: 7
+INFO visuels Images copiees pour pourquoi: 10
+INFO visuels Images copiees pour impact: 9
+INFO visuels Images copiees pour opinion: 9
+INFO visuels Images copiees pour ia_analysis: 10
+INFO visuels Images copiees pour perspectives: 8
+INFO visuels Images copiees pour conclusion: 9
+INFO voix Piper OK: introduction_fr.mp3
+INFO voix \u2713 fr/introduction: introduction_fr.mp3
+INFO voix Piper OK: contexte_fr.mp3
+INFO voix \u2713 fr/contexte: contexte_fr.mp3
+INFO voix Piper OK: fait_fr.mp3
+INFO voix \u2713 fr/fait: fait_fr.mp3
+INFO voix Piper OK: analyse_fr.mp3
+INFO voix \u2713 fr/analyse: analyse_fr.mp3
+INFO voix Piper OK: pourquoi_fr.mp3
+INFO voix \u2713 fr/pourquoi: pourquoi_fr.mp3
+INFO voix Piper OK: impact_fr.mp3
+INFO voix \u2713 fr/impact: impact_fr.mp3
+INFO voix Piper OK: opinion_fr.mp3
+INFO voix \u2713 fr/opinion: opinion_fr.mp3
+INFO voix Piper OK: ia_analysis_fr.mp3
+INFO voix \u2713 fr/ia_analysis: ia_analysis_fr.mp3
+INFO bot === DÉBUT PIPELINE — thème: inflation ===
+INFO bot Manifest images OK: 219 concepts
+INFO veille Flux bbc_business : 25 articles récents
+INFO veille Flux rfi_economie : 3 articles récents
+INFO veille Flux lemonde_economie : 20 articles récents
+INFO bot Articles récupérés: 48
+INFO selection SÉLECTION: Claude chatbot maker set for $1.3tn stock market debut despi | score=100.0 | theme=ia_emploi | bbc_business
+INFO bot Sujet retenu: Claude chatbot maker set for $1.3tn stock market debut despi | score=100.0 | theme=ia_emploi
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.464761 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.753354 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.

@@ -47,7 +47,7 @@ PROVIDERS = [
         "name": "Groq",
         "base_url": "https://api.groq.com/openai/v1",
         "api_key": None,  # utilise config.GROQ_API_KEY
-        "models": ["qwen/qwen3.8-27b", "openai/gpt-oss-20b"],
+        "models": ["qwen/qwen3.8-27b"],
         "max_tokens": 4000,
         "timeout": 40,
     },
