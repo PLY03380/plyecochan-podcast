@@ -1,6 +1,7 @@
 # Secrets
 .env
 config.py
+MEMORY.md
 client_secrets.json
 client_secret.json
 client_secret_*.apps.googleusercontent.com.json
