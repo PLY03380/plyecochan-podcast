@@ -22,34 +22,20 @@ log = logging.getLogger("llm")
 # Configuration des providers (ordre = ordre d'essai)
 PROVIDERS = [
     {
-        "name": "Google Gemini",
-        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
-        "api_key": os.getenv("GEMINI_API_KEY", ""),
-        "models": ["gemini-2.5-flash", "gemini-3.8-flash"],
-        "max_tokens": 8000,   # 4000 tronquait le JSON des scripts
-        "timeout": 120,
-    },
-    {
-        "name": "Ollama",
-        "base_url": "http://localhost:11434/v1",
-        "api_key": "ollama",
-        # Modeles LOCAUX d'abord (gratuits, aucune cle requise),
-        # ensuite les modeles cloud qui exigent un compte Ollama payant (402 sinon).
-        # qwen2.5-coder:7b est volontairement retire : 0.2 mot/s sur CPU (inutilisable).
-        "models": ["llama3.2:latest", "qwen2.5-coder:3b",
-                   "gpt-oss:20b-cloud", "gpt-oss:120b-cloud"],
-        # Plafond local : assez pour 200 mots (~350 tokens) ou un JSON de script,
-        # sans risquer de faire tourner le CPU pendant des heures.
-        "max_tokens": 1500,
-        "timeout": 600,       # CPU seul (~3 mots/s) : un script de 1500 tokens prend ~8 min
-    },
-    {
         "name": "Groq",
         "base_url": "https://api.groq.com/openai/v1",
         "api_key": None,  # utilise config.GROQ_API_KEY
         "models": ["qwen/qwen3.8-27b"],
         "max_tokens": 4000,
         "timeout": 40,
+    },
+    {
+        "name": "Google Gemini",
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "api_key": None,  # utilise config.GEMINI_API_KEY
+        "models": ["gemini-2.5-flash"],
+        "max_tokens": 8000,
+        "timeout": 120,
     },
     {
         "name": "OpenRouter",
