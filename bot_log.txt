@@ -521,3 +521,914 @@ WARNING bot Bot deja en cours (lock file present), sortie.
 WARNING bot Bot deja en cours (lock file present), sortie.
 WARNING bot Bot deja en cours (lock file present), sortie.
 WARNING bot Bot deja en cours (lock file present), sortie.
+INFO bot === DÉBUT PIPELINE — thème: ia_emploi ===
+INFO bot Manifest images OK: 219 concepts
+INFO veille Flux bbc_business : 16 articles récents
+INFO veille Flux rfi_economie : 3 articles récents
+INFO veille Flux lemonde_economie : 20 articles récents
+INFO bot Articles récupérés: 39
+INFO selection SÉLECTION: L’IA s’impose avec prudence dans les habitudes des investiss | score=115.0 | theme=ia_emploi | lemonde_economie
+INFO bot Sujet retenu: L’IA s’impose avec prudence dans les habitudes des investiss | score=115.0 | theme=ia_emploi
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+WARNING llm JSON parse error: Expecting ',' delimiter: line 21 column 4 (char 1747)
+ERROR script OpenRouter échoué, fallback: Tous les providers LLM ont echoue
+WARNING script Utilisation FALLBACK local (OpenRouter indisponible) — sujet: ia_emploi
+INFO bot Script généré pour 3 langues
+INFO bot   fr: title=80/100, thumb=11, tags=8, hook=WEAK
+INFO bot   en: title=80/100, thumb=11, tags=8, hook=WEAK
+INFO bot   es: title=80/100, thumb=11, tags=7, hook=WEAK
+INFO voix Piper OK: accroche_fr.mp3
+INFO voix \u2713 fr/accroche: accroche_fr.mp3
+INFO voix Piper OK: fait_fr.mp3
+INFO voix \u2713 fr/fait: fait_fr.mp3
+INFO voix Piper OK: pourquoi_fr.mp3
+INFO voix \u2713 fr/pourquoi: pourquoi_fr.mp3
+INFO voix Piper OK: impact_fr.mp3
+INFO voix \u2713 fr/impact: impact_fr.mp3
+INFO voix Piper OK: conclusion_fr.mp3
+INFO voix \u2713 fr/conclusion: conclusion_fr.mp3
+INFO voix Piper OK: accroche_en.mp3
+INFO voix \u2713 en/accroche: accroche_en.mp3
+INFO voix Piper OK: fait_en.mp3
+INFO voix \u2713 en/fait: fait_en.mp3
+INFO voix Piper OK: pourquoi_en.mp3
+INFO voix \u2713 en/pourquoi: pourquoi_en.mp3
+INFO voix Piper OK: impact_en.mp3
+INFO voix \u2713 en/impact: impact_en.mp3
+INFO voix Piper OK: conclusion_en.mp3
+INFO voix \u2713 en/conclusion: conclusion_en.mp3
+INFO voix Piper OK: accroche_es.mp3
+INFO voix \u2713 es/accroche: accroche_es.mp3
+INFO voix Piper OK: fait_es.mp3
+INFO voix \u2713 es/fait: fait_es.mp3
+INFO voix Piper OK: pourquoi_es.mp3
+INFO voix \u2713 es/pourquoi: pourquoi_es.mp3
+INFO voix Piper OK: impact_es.mp3
+INFO voix \u2713 es/impact: impact_es.mp3
+INFO voix Piper OK: conclusion_es.mp3
+INFO voix \u2713 es/conclusion: conclusion_es.mp3
+INFO bot Voix generee: 3 langues
+INFO bot Durees audio reelles: {'accroche': 4.1, 'fait': 7.8, 'pourquoi': 5.6, 'impact': 6.9, 'conclusion': 4.0}
+INFO visuels Images pour accroche: 1 (duree ~4.06)
+INFO visuels Images pour fait: 2 (duree ~7.78)
+INFO visuels Images pour pourquoi: 2 (duree ~5.62)
+INFO visuels Images pour impact: 2 (duree ~6.89)
+INFO visuels Images pour conclusion: 1 (duree ~4.03)
+INFO visuels Images copiees pour accroche: 1
+INFO visuels Images copiees pour fait: 2
+INFO visuels Images copiees pour pourquoi: 2
+INFO visuels Images copiees pour impact: 2
+INFO visuels Images copiees pour conclusion: 1
+INFO bot Images generees: 5 blocs
+INFO bot   accroche: 1 images
+INFO bot   fait: 2 images
+INFO bot   pourquoi: 2 images
+INFO bot   impact: 2 images
+INFO bot   conclusion: 1 images
+INFO montage Preset accroche OK: accroche fr.mp4
+INFO montage clip accroche/0 OK (4.06s)
+INFO montage seg accroche OK (4.06s + audio)
+INFO montage Preset fait OK: fait fr.mp4
+INFO montage clip fait/0 OK (3.89s)
+INFO montage clip fait/1 OK (3.89s)
+INFO montage seg fait OK (7.78s + audio)
+INFO montage Preset pourquoi OK: pourquoi fr.mp4
+INFO montage clip pourquoi/0 OK (2.81s)
+INFO montage clip pourquoi/1 OK (2.81s)
+INFO montage seg pourquoi OK (5.62s + audio)
+INFO montage Preset impact OK: impact fr.mp4
+INFO montage clip impact/0 OK (3.44s)
+INFO montage clip impact/1 OK (3.44s)
+INFO montage seg impact OK (6.89s + audio)
+INFO montage clip conclusion/0 OK (4.03s)
+INFO montage seg conclusion OK (4.03s + audio)
+INFO montage Preset subscribe OK: subscribe fr.mp4
+INFO montage \u2713 13-11-2026_short_fr.mp4 cree
+INFO montage Preset accroche OK: accroche en.mp4
+INFO montage clip accroche/0 OK (3.82s)
+INFO montage seg accroche OK (3.82s + audio)
+INFO montage Preset fait OK: fait en.mp4
+INFO montage clip fait/0 OK (4.57s)
+INFO montage clip fait/1 OK (4.57s)
+INFO montage seg fait OK (9.14s + audio)
+INFO montage Preset pourquoi OK: pourquoi en.mp4
+INFO montage clip pourquoi/0 OK (2.19s)
+INFO montage clip pourquoi/1 OK (2.19s)
+INFO montage seg pourquoi OK (4.39s + audio)
+INFO montage Preset impact OK: impact en.mp4
+INFO montage clip impact/0 OK (3.15s)
+INFO montage clip impact/1 OK (3.15s)
+INFO montage seg impact OK (6.31s + audio)
+INFO montage clip conclusion/0 OK (3.07s)
+INFO montage seg conclusion OK (3.07s + audio)
+INFO montage Preset subscribe OK: subscribe en.mp4
+INFO montage \u2713 13-11-2026_short_en.mp4 cree
+INFO montage Preset accroche OK: accroche es.mp4
+INFO montage clip accroche/0 OK (3.96s)
+INFO montage seg accroche OK (3.96s + audio)
+INFO montage Preset fait OK: fait es.mp4
+INFO montage clip fait/0 OK (4.25s)
+INFO montage clip fait/1 OK (4.25s)
+INFO montage seg fait OK (8.5s + audio)
+INFO montage Preset pourquoi OK: pourquoi es.mp4
+INFO montage clip pourquoi/0 OK (2.42s)
+INFO montage clip pourquoi/1 OK (2.42s)
+INFO montage seg pourquoi OK (4.85s + audio)
+INFO montage Preset impact OK: impact es.mp4
+INFO montage clip impact/0 OK (2.96s)
+INFO montage clip impact/1 OK (2.96s)
+INFO montage seg impact OK (5.93s + audio)
+INFO montage clip conclusion/0 OK (3.1s)
+INFO montage seg conclusion OK (3.1s + audio)
+INFO montage Preset subscribe OK: subscribe es.mp4
+INFO montage \u2713 13-11-2026_short_es.mp4 cree
+INFO bot Videos: {'fr': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-13\\13-11-2026_short_fr.mp4', 'en': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-13\\13-11-2026_short_en.mp4', 'es': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-13\\13-11-2026_short_es.mp4'}
+C:\Users\PLY\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\site-packages\google\api_core\_python_version_support.py:254: FutureWarning: You are using a Python version (3.11.15) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO upload Upload 13-11-2026_short_fr.mp4...
+INFO upload Video uploaded: https://youtu.be/OI4CJjT_JPM
+INFO upload Added to playlist: Actualités économiques FR
+INFO upload Upload 13-11-2026_short_en.mp4...
+INFO upload Video uploaded: https://youtu.be/Due1tVBt9-c
+INFO upload Added to playlist: Economic News EN
+INFO upload Upload 13-11-2026_short_es.mp4...
+INFO upload Video uploaded: https://youtu.be/a0BXtZjeLvY
+INFO upload Added to playlist: Noticias Económicas ES
+INFO bot Uploads: {'fr': 'OI4CJjT_JPM', 'en': 'Due1tVBt9-c', 'es': 'a0BXtZjeLvY'}
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO sync_uploads Videos deja uploadees: 104
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO sync_uploads Deja uploade (fr): IA & EMPLOI 11 % ce 13 novembre 2026 — Les métiers
+INFO sync_uploads Deja uploade (en): AI & JOBS 11 % November 13, 2026 — The Jobs Changi
+INFO sync_uploads Deja uploade (es): IA Y EMPLEO 11 % el 13 de noviembre de 2026 — Los 
+INFO publish_pending === PUBLISH PENDING - 2026-11-13 ===
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO publish_pending Videos uploadees sur YouTube: 72
+INFO publish_pending Video fr: OI4CJjT_JPM
+INFO publish_pending Video en: Due1tVBt9-c
+INFO publish_pending Video es: a0BXtZjeLvY
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+WARNING llm JSON parse error: Unterminated string starting at: line 2 column 14 (char 15)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO google_auth_httplib2 Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO blogger Article créé: 8207231962965663941 (draft=False)
+INFO publish_pending Article Blogger fr cree: https://www.blogger.com/blog/post/edit/4322044525709685461/8207231962965663941
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+WARNING llm JSON parse error: Unterminated string starting at: line 2 column 14 (char 15)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO google_auth_httplib2 Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO blogger Article créé: 8834846164678885529 (draft=False)
+INFO publish_pending Article Blogger en cree: https://www.blogger.com/blog/post/edit/4322044525709685461/8834846164678885529
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+WARNING llm JSON parse error: Unterminated string starting at: line 2 column 14 (char 15)
+INFO googleapiclient.discovery_cache file_cache is only supported with oauth2client<4.0.0
+INFO google_auth_httplib2 Refreshing credentials due to a 401 response. Attempt 1/2.
+INFO blogger Article créé: 7953072493670297982 (draft=False)
+INFO publish_pending Article Blogger es cree: https://www.blogger.com/blog/post/edit/4322044525709685461/7953072493670297982
+WARNING indexing Fichier credentials non trouvé: plychanbot-1937b6d23966.json
+INFO publish_pending Indexation Google demandee
+INFO indexing_bing Indexe Bing/DuckDuckGo: https://plychaneconomie.blogspot.com/p/indexnow-key.html
+INFO publish_pending Indexation Bing/DuckDuckGo demandee
+INFO fb_engage 3 posts prepares pour validation
+INFO fb_engage 3 actions approuvees
+INFO facebook Post Facebook publie: 1389261604274221_122107894887528594
+INFO fb_engage Post FB publie: 1389261604274221_122107894887528594
+INFO facebook Post Facebook publie: 1389261604274221_122107894923528594
+INFO fb_engage Post FB publie: 1389261604274221_122107894923528594
+INFO facebook Post Facebook publie: 1389261604274221_122107894971528594
+INFO fb_engage Post FB publie: 1389261604274221_122107894971528594
+INFO fb_engage 3 actions publiees
+INFO publish_pending Facebook engagement: 3 posts publies (auto)
+ERROR multi_social Publora echoue: 403 Client Error: Forbidden for url: https://api.publora.com/api/v1/create-post
+WARNING multi_social Distribution echouee: IA & EMPLOI 11 % ce 13 novembre 2026 — Les métiers
+INFO publish_pending Distribution multi-reseaux fr: OK
+ERROR multi_social Publora echoue: 403 Client Error: Forbidden for url: https://api.publora.com/api/v1/create-post
+WARNING multi_social Distribution echouee: AI & JOBS 11 % November 13, 2026 — The Jobs Changi
+INFO publish_pending Distribution multi-reseaux en: OK
+ERROR multi_social Publora echoue: 403 Client Error: Forbidden for url: https://api.publora.com/api/v1/create-post
+WARNING multi_social Distribution echouee: IA Y EMPLEO 11 % el 13 de noviembre de 2026 — Los 
+INFO publish_pending Distribution multi-reseaux es: OK
+WARNING newsletter Brevo: pas de cle (BREVO_API_KEY requise)
+INFO publish_pending Newsletter fr: envoyee
+WARNING newsletter Brevo: pas de cle (BREVO_API_KEY requise)
+INFO publish_pending Newsletter en: envoyee
+WARNING newsletter Brevo: pas de cle (BREVO_API_KEY requise)
+INFO publish_pending Newsletter es: envoyee
+INFO publish_pending === PUBLISH PENDING TERMINE ===
+INFO bot Publication Blogger/Facebook/Indexation terminée
+INFO bot === FIN PIPELINE OK ===
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script_long Bloc fr/introduction genere (182 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.442710 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.896204 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/contexte vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.381286 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Google Gemini/gemini-2.5-flash
+INFO script_long Bloc fr/fait genere (221 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.428439 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.965428 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/analyse vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.435923 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.906158 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/pourquoi vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.409595 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.773465 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/impact vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.434154 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.981133 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/opinion vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.493635 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.843491 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/ia_analysis vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.379983 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.928386 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/perspectives vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.466352 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.786107 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc fr/conclusion vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.413606 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.829273 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.377564 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.955653 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc en/introduction vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.480588 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.880862 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc en/context vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.429078 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.820069 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc en/fact vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.420385 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.789336 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc en/analysis vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.447973 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.895285 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc en/why vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.422772 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.815687 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING llm OpenRouter: cle epuisee (402), provider ignore
+ERROR llm Tous les providers LLM ont echoue
+WARNING script_long call_llm global echoue, tentative OpenRouter directe
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-db8... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-7db... epuisee (402)
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+WARNING script_long Cle sk-or-v1-567... epuisee (402)
+WARNING script_long Bloc en/impact vide, fallback
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.422197 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 0.917816 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+WARNING llm Google Gemini: quota journalier epuise (429), provider ignore
+INFO httpx2 HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 402 Payment Required"
+INFO bot === DÉBUT PIPELINE — thème: immobilier ===
+INFO bot Manifest images OK: 219 concepts
+INFO veille Flux bbc_business : 18 articles récents
+INFO veille Flux rfi_economie : 8 articles récents
+INFO veille Flux lemonde_economie : 20 articles récents
+INFO bot Articles récupérés: 46
+INFO selection SÉLECTION: Food bank sees donations drop by 10% each year | score=100.0 | theme=generique | bbc_business
+INFO bot Sujet retenu: Food bank sees donations drop by 10% each year | score=100.0 | theme=generique
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+ERROR script OpenRouter échoué, fallback: es: titre manquant
+WARNING script Utilisation FALLBACK local (OpenRouter indisponible) — sujet: generique
+INFO bot Script généré pour 3 langues
+INFO bot   fr: title=76/100, thumb=14, tags=9, hook=WEAK
+INFO bot   en: title=76/100, thumb=14,, tags=7, hook=WEAK
+INFO bot   es: title=76/100, thumb=14, tags=9, hook=WEAK
+INFO voix Piper OK: accroche_fr.mp3
+INFO voix \u2713 fr/accroche: accroche_fr.mp3
+INFO voix Piper OK: fait_fr.mp3
+INFO voix \u2713 fr/fait: fait_fr.mp3
+INFO voix Piper OK: pourquoi_fr.mp3
+INFO voix \u2713 fr/pourquoi: pourquoi_fr.mp3
+INFO voix Piper OK: impact_fr.mp3
+INFO voix \u2713 fr/impact: impact_fr.mp3
+INFO voix Piper OK: conclusion_fr.mp3
+INFO voix \u2713 fr/conclusion: conclusion_fr.mp3
+INFO voix Piper OK: accroche_en.mp3
+INFO voix \u2713 en/accroche: accroche_en.mp3
+INFO voix Piper OK: fait_en.mp3
+INFO voix \u2713 en/fait: fait_en.mp3
+INFO voix Piper OK: pourquoi_en.mp3
+INFO voix \u2713 en/pourquoi: pourquoi_en.mp3
+INFO voix Piper OK: impact_en.mp3
+INFO voix \u2713 en/impact: impact_en.mp3
+INFO voix Piper OK: conclusion_en.mp3
+INFO voix \u2713 en/conclusion: conclusion_en.mp3
+INFO voix Piper OK: accroche_es.mp3
+INFO voix \u2713 es/accroche: accroche_es.mp3
+INFO voix Piper OK: fait_es.mp3
+INFO voix \u2713 es/fait: fait_es.mp3
+INFO voix Piper OK: pourquoi_es.mp3
+INFO voix \u2713 es/pourquoi: pourquoi_es.mp3
+INFO voix Piper OK: impact_es.mp3
+INFO voix \u2713 es/impact: impact_es.mp3
+INFO voix Piper OK: conclusion_es.mp3
+INFO voix \u2713 es/conclusion: conclusion_es.mp3
+INFO bot Voix generee: 3 langues
+INFO bot Durees audio reelles: {'accroche': 3.0, 'fait': 7.8, 'pourquoi': 4.4, 'impact': 5.9, 'conclusion': 4.8}
+INFO visuels Images pour accroche: 1 (duree ~2.98)
+INFO visuels Images pour fait: 2 (duree ~7.85)
+INFO visuels Images pour pourquoi: 1 (duree ~4.44)
+INFO visuels Images pour impact: 2 (duree ~5.88)
+INFO visuels Images pour conclusion: 1 (duree ~4.75)
+INFO visuels Images copiees pour accroche: 1
+INFO visuels Images copiees pour fait: 2
+INFO visuels Images copiees pour pourquoi: 1
+INFO visuels Images copiees pour impact: 2
+INFO visuels Images copiees pour conclusion: 1
+INFO bot Images generees: 5 blocs
+INFO bot   accroche: 1 images
+INFO bot   fait: 2 images
+INFO bot   pourquoi: 1 images
+INFO bot   impact: 2 images
+INFO bot   conclusion: 1 images
+INFO montage Preset accroche OK: accroche fr.mp4
+INFO montage clip accroche/0 OK (2.98s)
+INFO montage seg accroche OK (2.98s + audio)
+INFO montage Preset fait OK: fait fr.mp4
+INFO montage clip fait/0 OK (3.92s)
+INFO montage clip fait/1 OK (3.92s)
+INFO montage seg fait OK (7.85s + audio)
+INFO montage Preset pourquoi OK: pourquoi fr.mp4
+INFO montage clip pourquoi/0 OK (4.44s)
+INFO montage seg pourquoi OK (4.44s + audio)
+INFO montage Preset impact OK: impact fr.mp4
+INFO montage clip impact/0 OK (2.94s)
+INFO montage clip impact/1 OK (2.94s)
+INFO montage seg impact OK (5.88s + audio)
+INFO montage clip conclusion/0 OK (4.75s)
+INFO montage seg conclusion OK (4.75s + audio)
+INFO montage Preset subscribe OK: subscribe fr.mp4
+INFO montage \u2713 14-11-2026_short_fr.mp4 cree
+INFO montage Preset accroche OK: accroche en.mp4
+INFO montage clip accroche/0 OK (2.76s)
+INFO montage seg accroche OK (2.76s + audio)
+INFO montage Preset fait OK: fait en.mp4
+INFO montage clip fait/0 OK (3.9s)
+INFO montage clip fait/1 OK (3.9s)
+INFO montage seg fait OK (7.8s + audio)
+INFO montage Preset pourquoi OK: pourquoi en.mp4
+INFO montage clip pourquoi/0 OK (3.58s)
+INFO montage seg pourquoi OK (3.58s + audio)
+INFO montage Preset impact OK: impact en.mp4
+INFO montage clip impact/0 OK (2.41s)
+INFO montage clip impact/1 OK (2.41s)
+INFO montage seg impact OK (4.82s + audio)
+INFO montage clip conclusion/0 OK (3.86s)
+INFO montage seg conclusion OK (3.86s + audio)
+INFO montage Preset subscribe OK: subscribe en.mp4
+INFO montage \u2713 14-11-2026_short_en.mp4 cree
+INFO montage Preset accroche OK: accroche es.mp4
+INFO montage clip accroche/0 OK (2.52s)
+INFO montage seg accroche OK (2.52s + audio)
+INFO montage Preset fait OK: fait es.mp4
+INFO montage clip fait/0 OK (4.07s)
+INFO montage clip fait/1 OK (4.07s)
+INFO montage seg fait OK (8.14s + audio)
+INFO montage Preset pourquoi OK: pourquoi es.mp4
+INFO montage clip pourquoi/0 OK (4.13s)
+INFO montage seg pourquoi OK (4.13s + audio)
+INFO montage Preset impact OK: impact es.mp4
+INFO montage clip impact/0 OK (2.85s)
+INFO montage clip impact/1 OK (2.85s)
+INFO montage seg impact OK (5.69s + audio)
+INFO montage clip conclusion/0 OK (4.22s)
+INFO montage seg conclusion OK (4.22s + audio)
+INFO montage Preset subscribe OK: subscribe es.mp4
+INFO montage \u2713 14-11-2026_short_es.mp4 cree
+INFO bot Videos: {'fr': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-14\\14-11-2026_short_fr.mp4', 'en': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-14\\14-11-2026_short_en.mp4', 'es': 'D:\\Cahine youtube economique\\output\\videos\\2026-11-14\\14-11-2026_short_es.mp4'}
+C:\Users\PLY\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\site-packages\google\api_core\_python_version_support.py:254: FutureWarning: You are using a Python version (3.11.15) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+WARNING bot Upload echoue: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+ERROR sync_uploads Impossible de lister les videos: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO sync_uploads Videos deja uploadees: 0
+WARNING sync_uploads Impossible de recuperer les titres: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO sync_uploads Upload manquant: 14-11-2026_short_fr.mp4 (fr)
+ERROR sync_uploads   -> echec: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant',
+INFO sync_uploads Upload manquant: 14-11-2026_short_en.mp4 (en)
+ERROR sync_uploads   -> echec: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant',
+INFO sync_uploads Upload manquant: 14-11-2026_short_es.mp4 (es)
+ERROR sync_uploads   -> echec: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant',
+INFO publish_pending === PUBLISH PENDING - 2026-11-14 ===
+ERROR publish_pending Impossible de recuperer les titres: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})
+INFO publish_pending Videos uploadees sur YouTube: 0
+WARNING publish_pending Blogger fr: pas de video_id, skip
+WARNING publish_pending Blogger en: pas de video_id, skip
+WARNING publish_pending Blogger es: pas de video_id, skip
+INFO fb_engage 3 posts prepares pour validation
+INFO fb_engage 3 actions approuvees
+INFO facebook Post Facebook publie: 1389261604274221_122108202315528594
+INFO fb_engage Post FB publie: 1389261604274221_122108202315528594
+INFO facebook Post Facebook publie: 1389261604274221_122108202405528594
+INFO fb_engage Post FB publie: 1389261604274221_122108202405528594
+INFO facebook Post Facebook publie: 1389261604274221_122108202573528594
+INFO fb_engage Post FB publie: 1389261604274221_122108202573528594
+INFO fb_engage 3 actions publiees
+INFO publish_pending Facebook engagement: 3 posts publies (auto)
+INFO publish_pending === PUBLISH PENDING TERMINE ===
+INFO bot Publication Blogger/Facebook/Indexation terminée
+INFO bot === FIN PIPELINE OK ===
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/introduction genere (199 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/contexte genere (204 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/fait genere (234 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 11.000000 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/analyse genere (213 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 20.000000 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/pourquoi genere (205 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 13.000000 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/impact genere (203 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 15.000000 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 1.000000 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/opinion genere (216 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 18.000000 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/ia_analysis genere (205 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 7.000000 seconds (retry 1 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 1.000000 seconds (retry 2 of 2)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+INFO llm LLM OK via Groq/qwen/qwen3.8-27b
+INFO script_long Bloc fr/perspectives genere (198 mots)
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+INFO openai._base_client Retrying request in 11.000000 seconds (retry 1 of 2)
+INFO bot === DÉBUT PIPELINE — thème: immobilier ===
+INFO bot Manifest images OK: 219 concepts
+INFO veille Flux bbc_business : 18 articles récents
+INFO veille Flux rfi_economie : 8 articles récents
+INFO veille Flux lemonde_economie : 20 articles récents
+INFO bot Articles récupérés: 46
+INFO selection SÉLECTION: What do Christmas market traders say about rising prices? | score=75.0 | theme=generique | bbc_business
+INFO bot Sujet retenu: What do Christmas market traders say about rising prices? | score=75.0 | theme=generique
+INFO httpx2 HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+WARNING llm Groq: acces refuse (403), provider ignore
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
+WARNING bot Bot deja en cours (lock file present), sortie.
